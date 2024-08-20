@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneakers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = "css/itemPageCSS.css">
+</head>
+<body>
+    <header>
+        <a href = "main.html" class = "mainLogoDiv">
+            <img src = "img/logoHeader.png" class = "mainLogoImg">
+        </a>
+        <nav>
+            <a href = "#" class = "buttonNav">Каталог</a>
+            <a href = "#" class = "buttonNav">Магазини</a>
+            <a href = "#" class = "buttonNav">Розпродаж</a>
+            <a href = "#" class = "buttonNav">Допомога</a>
+            <a href = "#" class = "avaUserDiv">
+                <img src = "img/ava.png" class = "avaUserImg">
+            </a>
+        </nav>
+    </header>
+    <main>
+        <div class = "mainBlock">
+            <div class = "imgSneakersDiv">
+                <img src = "img/new-balance-530.png" class = "imgSneakersImg">
+            </div>
+
+            <div class = "mainInfo">
+                <div class = "itemNameNArticle">
+                    <h1 class = "itemName" id="itemModel">New Balance 530</h1>
+                    <h1 class = "itemArticle">Артикул: AB12</h1>
+                </div>
+
+                <h1 class = "itemPrice">5399 грн.</h1>
+
+                <div class = "itemSize">
+                    <h1 class = "sizeTxt">Розміри:</h1>
+
+                    <div class = "netSize">
+                        <button class = "sizeDiv" data-sizes="37">
+                            37
+                        </button>
+                        <button class = "sizeDiv" data-sizes="38">
+                            38
+                        </button>
+                        <button class = "sizeDiv" data-sizes="39">
+                            39
+                        </button>
+                        <button class = "sizeDiv" data-sizes="40">
+                            40
+                        </button>
+                        <button class = "sizeDiv" data-sizes="41">
+                            41
+                        </button>
+                        <button class = "sizeDiv" data-sizes="42">
+                            42
+                        </button>
+                        <button class = "sizeDiv" data-sizes="43">
+                            43
+                        </button>
+                        <button class = "sizeDiv" data-sizes="44">
+                            44
+                        </button>
+                        <button class = "sizeDiv" data-sizes="45">
+                            45
+                        </button>
+                        <button class = "sizeDiv" data-sizes="46">
+                            46
+                        </button>
+                    </div>
+                </div>
+                <div class = "buttons">
+                    <button class = "buyButton">ЗАМОВИТИ</button>
+                    <button class = "aditionalButton"></button>
+                    <button class = "aditionalButton"></button>
+                </div>
+            </div>
+        </div>
+
+        <div class = "secondLineBlocks">
+            <div class = "infoBlock">
+                <div class = "description">
+                    <h1>Детальний опис:</h1>
+                    <p>Спортивні моделі періоду 90-х та 2000-х років створили унікальну спортивну естетику, яка вже в ті роки вийшла за межі спорту та міцно закріпилася на вулицях міст. Сьогодні, підтримуючи світові тренди, ми знову звернулися до наших архівів, щоб подарувати стильну модель для яскравих образів у міських буднях. Верх моделі виконаний з легких сітчастих матеріалів та доповнений щільними матеріалами для додаткової підтримки стопи та відображення автентичності стилю 2000-х.</p>
+                </div>
+                <div class = "tableNCharac">
+                    <div class = "tableSizes">
+                        <h1>Таблиця розмірів:</h1>
+                    </div>
+                    <div class = "charac">
+                        <h1>Характеристики:</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "commentsBlock">
+                <h1>Відгуки</h1>
+            </div>
+        </div>
+
+    </main>
+    <script>
+        const items = document.querySelectorAll('.itemDiv');
+
+        items.forEach(item => {
+        item.addEventListener('click', (event) => {
+        event.preventDefault();
+        const itemName = item.getAttribute('data-name');
+        document.title = itemName;
+    });
+});
+
+        function updateTabTitle() {
+            var modelName = document.getElementById('itemModel').innerText;
+            document.title = modelName;
+        }
+
+        window.onload = updateTabTitle;
+    </script>
+</body>
+</html>

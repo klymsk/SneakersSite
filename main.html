@@ -149,71 +149,97 @@
             </div>
 
             <div class = "catalogDiv">
-                <div class = "itemDiv">
-                    <a href = "#" class = "itemLink">
+                <div class = "itemDiv" data-sizes="39">
+                    <a href = "itemPage.html" class = "itemLink">
                         <img src = "img/new-balance-530.png" class = "itemImg">
                     </a>
                     <h1 class = "itemName">New Balance 530</h1>
+                    <h2 class = "itemPrice">5300 грн.</h2>
+                </div>
+                <div class = "itemDiv" data-sizes="39, 40, 41">
+                    <a href = "#" class = "itemLink">
+                        <img src = "img/new-balance-530.png" class = "itemImg">
+                    </a>
+                    <h1 class = "itemName">New Balance 531</h1>
+                    <h2 class = "itemPrice">5300 грн.</h2>
+                </div>
+                <div class = "itemDiv" data-sizes="41">
+                    <a href = "#" class = "itemLink">
+                        <img src = "img/new-balance-530.png" class = "itemImg">
+                    </a>
+                    <h1 class = "itemName">New Balance 532</h1>
+                    <h2 class = "itemPrice">5300 грн.</h2>
+                </div>
+                <div class = "itemDiv" data-sizes="40">
+                    <a href = "#" class = "itemLink">
+                        <img src = "img/new-balance-530.png" class = "itemImg">
+                    </a>
+                    <h1 class = "itemName">New Balance 533</h1>
+                    <h2 class = "itemPrice">5300 грн.</h2>
+                </div>
+                <div class = "itemDiv" data-sizes="40, 41">
+                    <a href = "#" class = "itemLink">
+                        <img src = "img/new-balance-530.png" class = "itemImg">
+                    </a>
+                    <h1 class = "itemName">New Balance 534</h1>
+                    <h2 class = "itemPrice">5300 грн.</h2>
+                </div>
+                <div class = "itemDiv" data-sizes="40">
+                    <a href = "#" class = "itemLink">
+                        <img src = "img/new-balance-530.png" class = "itemImg">
+                    </a>
+                    <h1 class = "itemName">New Balance 535</h1>
                     <h2 class = "itemPrice">5300 грн.</h2>
                 </div>
                 <div class = "itemDiv">
                     <a href = "#" class = "itemLink">
                         <img src = "img/new-balance-530.png" class = "itemImg">
                     </a>
-                    <h1 class = "itemName">New Balance 530</h1>
+                    <h1 class = "itemName">New Balance 536</h1>
                     <h2 class = "itemPrice">5300 грн.</h2>
                 </div>
                 <div class = "itemDiv">
                     <a href = "#" class = "itemLink">
                         <img src = "img/new-balance-530.png" class = "itemImg">
                     </a>
-                    <h1 class = "itemName">New Balance 530</h1>
+                    <h1 class = "itemName">New Balance 537</h1>
                     <h2 class = "itemPrice">5300 грн.</h2>
                 </div>
                 <div class = "itemDiv">
                     <a href = "#" class = "itemLink">
                         <img src = "img/new-balance-530.png" class = "itemImg">
                     </a>
-                    <h1 class = "itemName">New Balance 530</h1>
-                    <h2 class = "itemPrice">5300 грн.</h2>
-                </div>
-                <div class = "itemDiv">
-                    <a href = "#" class = "itemLink">
-                        <img src = "img/new-balance-530.png" class = "itemImg">
-                    </a>
-                    <h1 class = "itemName">New Balance 530</h1>
-                    <h2 class = "itemPrice">5300 грн.</h2>
-                </div>
-                <div class = "itemDiv">
-                    <a href = "#" class = "itemLink">
-                        <img src = "img/new-balance-530.png" class = "itemImg">
-                    </a>
-                    <h1 class = "itemName">New Balance 530</h1>
-                    <h2 class = "itemPrice">5300 грн.</h2>
-                </div>
-                <div class = "itemDiv">
-                    <a href = "#" class = "itemLink">
-                        <img src = "img/new-balance-530.png" class = "itemImg">
-                    </a>
-                    <h1 class = "itemName">New Balance 530</h1>
-                    <h2 class = "itemPrice">5300 грн.</h2>
-                </div>
-                <div class = "itemDiv">
-                    <a href = "#" class = "itemLink">
-                        <img src = "img/new-balance-530.png" class = "itemImg">
-                    </a>
-                    <h1 class = "itemName">New Balance 530</h1>
-                    <h2 class = "itemPrice">5300 грн.</h2>
-                </div>
-                <div class = "itemDiv">
-                    <a href = "#" class = "itemLink">
-                        <img src = "img/new-balance-530.png" class = "itemImg">
-                    </a>
-                    <h1 class = "itemName">New Balance 530</h1>
+                    <h1 class = "itemName">New Balance 538</h1>
                     <h2 class = "itemPrice">5300 грн.</h2>
                 </div>
             </div>
         </div>
     </main>
+
+    <script>
+        
+        document.addEventListener('DOMContentLoaded', function() {
+        const sizeCheckboxes = document.querySelectorAll('.filterDiv input[type="checkbox"]');
+        const items = document.querySelectorAll('.itemDiv');
+
+    sizeCheckboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', () => {
+            const selectedSizes = Array.from(sizeCheckboxes)
+                .filter(checkbox => checkbox.checked)
+                .map(checkbox => checkbox.value);
+
+            items.forEach(item => {
+                const itemSizes = item.getAttribute('data-sizes') ? item.getAttribute('data-sizes').split(',').map(size => size.trim()) : [];
+
+                if (selectedSizes.length === 0 || selectedSizes.some(size => itemSizes.includes(size))) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    });
+});
+    </script>
 </body>
 </html>
