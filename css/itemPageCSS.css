@@ -100,6 +100,11 @@ body {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 }
 
+.sizeDiv:active {
+    transform: scale(0.95); 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
 .netSize {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -234,12 +239,16 @@ body {
     padding: 10px;
     text-align: center;
     border-bottom: 1px solid #ddd;
+    font-family: "Unbounded";
+    font-weight: 200;
 }
 
 .size-chart th {
     padding: 10px;
     text-align: center;
     border-bottom: 1px solid #ddd;
+    font-family: "Unbounded";
+    font-weight: 500;
 }
 
 .size-chart th {
@@ -269,7 +278,7 @@ body {
     font-family: "Unbounded";
     font-size: 20px;
     font-weight: 700;
-    color: 444444;
+    color: #444444;
     margin-bottom: 40px;
 }
 
@@ -282,14 +291,14 @@ body {
     font-family: "Unbounded";
     font-size: 15px;
     font-weight: 700;
-    color: 444444;
+    color: #444444;
 }
 
 .commentDiv p {
     font-family: "Unbounded";
     font-size: 10px;
     font-weight: 400;
-    color: 444444;
+    color: #444444;
     margin-top: 0px;
 }
 
@@ -328,7 +337,54 @@ main {
     gap: 50px;
 }
 
+.sectionName {
+    font-family: "Unbounded";
+    font-size: 15px;
+    font-weight: 200;
+    color: #444444;
+    text-decoration: none;
+}
+
+.sectionsList li {
+    list-style-type: none; 
+    padding-left: 0; 
+    margin: 0;
+    text-decoration: none; 
+}
+
+.sectionsList {
+    padding: 0px;
+}
+
+.copyrightTetx {
+    font-family: "Unbounded";
+    font-size: 15px;
+    font-weight: 200;
+    color: #444444;
+    text-align: center;
+    height: 75px;
+    width: 390px;
+}
+
+.ico {
+    height: 20px;
+    width: 20px;
+}
+
+.socialmediaDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 footer {
     background-color: #7D6E83;
-    padding
+    padding: 20px 30px;
+    box-sizing: border-box;
+    margin-top: 190px;
 }
