@@ -128,6 +128,16 @@ body {
     color: white;
 }
 
+.buyButton:active {
+    transform: scale(0.95); 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.addButImg {
+    height: 25px;
+    width: 25px;
+}
+
 .aditionalButton {
     height: 65px;
     width: 80px;
@@ -138,11 +148,17 @@ body {
     outline: none;
 }
 
+.aditionalButton:active {
+    transform: scale(0.95); 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
 .buttons {
     display: flex;
     flex-direction: row;
     gap: 20px;
 }
+
 
 .mainInfo {
     display: flex;
@@ -231,6 +247,14 @@ body {
     font-weight: bold;
 }
 
+.charac p {
+    font-family: "Unbounded";
+    font-size: 12px;
+    font-weight: 200;
+    color: 444444;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
 
 .infoBlock {
     height: 780px;
@@ -282,7 +306,7 @@ body {
 }
 
 .commentsBlock {
-    height: 680px;
+    height: 780px;
     width: 670px;
     border-radius: 20px;
     padding: 50px 120px 50px 70px;
@@ -302,4 +326,9 @@ main {
     display: flex;
     flex-direction: column;
     gap: 50px;
+}
+
+footer {
+    background-color: #7D6E83;
+    padding
 }
