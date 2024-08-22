@@ -1,0 +1,174 @@
+.mainLogoDiv {
+    height: 100px;
+    width: 100px;
+}
+
+.buttonNav {
+    text-decoration: none;
+    color: black;
+    font-family: "Unbounded";
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.avaUserImg {
+    height: 70px;
+    width: 70px;
+}
+
+nav {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+header {
+    margin: 50px 50px 100px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.mainTitles h1 {
+    font-family: "Unbounded";
+    font-size: 45px;
+    font-weight: 900;
+    color: #444444;
+}
+
+.mainTitles a {
+    font-family: "Unbounded";
+    font-size: 20px;
+    font-weight: 900;
+    color: #7D6E83;
+    text-decoration: none;
+}
+
+.mainTitles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+
+.address h1 {
+    font-family: "Unbounded";
+    font-size: 35px;
+    font-weight: 900;
+    color: #444444; 
+    margin-bottom: 0px;
+}
+
+.address h2 {
+    font-family: "Unbounded";
+    font-size: 35px;
+    font-weight: 900;
+    color: #7D6E83;
+    margin-top: 0px;
+}
+
+.schedule h1 {
+    font-family: "Unbounded";
+    font-size: 35px;
+    font-weight: 900;
+    color: #444444;  
+}
+
+.schedule h2 {
+    font-family: "Unbounded";
+    font-size: 30px;
+    font-weight: 900;
+    color: #444444;  
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.phoneNumber h1 {
+    font-family: "Unbounded";
+    font-size: 35px;
+    font-weight: 900;
+    color: #444444;  
+}
+
+.mapImg {
+    height: 600px;
+    width: 600px;
+    border-radius: 20px;
+}
+
+.storeInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.contentSection {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+main {
+    margin: 150px 180px;
+    padding: 100px 80px;
+    box-sizing: border-box;
+    background-color: #F8EDE3;
+    border-radius: 20px;
+}
+
+body {
+    background-color: #D5B39C;
+    margin: 0px;
+}
+
+.sectionName {
+    font-family: "Unbounded";
+    font-size: 15px;
+    font-weight: 200;
+    color: #444444;
+    text-decoration: none;
+}
+
+.sectionsList li {
+    list-style-type: none; 
+    padding-left: 0; 
+    margin: 0;
+    text-decoration: none; 
+}
+
+.sectionsList {
+    padding: 0px;
+}
+
+.copyrightTetx {
+    font-family: "Unbounded";
+    font-size: 15px;
+    font-weight: 200;
+    color: #444444;
+    text-align: center;
+    height: 75px;
+    width: 390px;
+}
+
+.ico {
+    height: 20px;
+    width: 20px;
+}
+
+.socialmediaDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer {
+    background-color: #7D6E83;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    margin-top: 190px;
+}
