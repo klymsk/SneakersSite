@@ -1,0 +1,226 @@
+.mainLogoDiv {
+    height: 100px;
+    width: 100px;
+}
+
+.buttonNav {
+    text-decoration: none;
+    color: black;
+    font-family: "Unbounded";
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.avaUserImg {
+    height: 70px;
+    width: 70px;
+}
+
+nav {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+header {
+    margin: 50px 50px 100px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.mainCategories a {
+    text-decoration: none;
+    font-family: "Unbounded";
+    font-size: 25px;
+    font-weight: 400;
+    color: #444444;
+}
+
+.mainCategories {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-top: 70px;
+}
+
+.supportButton {
+    text-decoration: none;
+    font-family: "Unbounded";
+    font-size: 25px;
+    font-weight: 400;
+    color: #444444;
+}
+
+.exitButton {
+    text-decoration: none;
+    font-family: "Unbounded";
+    font-size: 25px;
+    font-weight: 700;
+    color: #444444;
+}
+
+.addCategpries {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.categoriesProfile {
+    display: flex;
+    flex-direction: column;
+    gap: 350px;
+}
+
+.titleSection h1 {
+    font-family: "Unbounded";
+    font-size: 40px;
+    font-weight: 900;
+    color: #444444;
+}
+
+.titleSection h2 {
+    font-family: "Unbounded";
+    font-size: 30px;
+    font-weight: 500;
+    color: #444444;
+}
+
+.titleSection {
+    margin-bottom: 80px;
+}
+
+.personalData h1 {
+    font-family: "Unbounded";
+    font-size: 20px;
+    font-weight: 400;
+    color: #444444;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.personalData p {
+    font-family: "Unbounded";
+    font-size: 25px;
+    font-weight: 500;
+    color: #444444;
+    margin-top: 0px;
+}
+
+.personalData {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px; 
+    margin-bottom: 70px;
+}
+
+.titleStyle {
+    font-family: "Unbounded";
+    font-size: 30px;
+    font-weight: 500;
+    color: #444444;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.listFilter li {
+    font-family: "Unbounded";
+    font-size: 20px;
+    font-weight: 500;
+    color: #444444;
+    list-style-type: none;
+}
+
+.listFilter {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px; 
+    padding: 0px;
+}
+
+.stylesList {
+    margin-bottom: 100px;
+}
+
+.saveButton button {
+    font-family: "Unbounded";
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    padding: 20px 95px;
+    background-color: #7D6E83;
+    border-radius: 20px;
+    width: auto;
+}
+
+.saveButton button:active {
+    transform: scale(0.95); 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+main {
+    background-color: #F8EDE3;
+    border-radius: 20px;
+    padding: 60px 270px 60px 200px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    gap: 370px;
+}
+
+body {
+    background-color: #D5B39C;
+    margin: 0px;
+}
+
+.sectionName {
+    font-family: "Unbounded";
+    font-size: 15px;
+    font-weight: 200;
+    color: #444444;
+    text-decoration: none;
+}
+
+.sectionsList li {
+    list-style-type: none; 
+    padding-left: 0; 
+    margin: 0;
+    text-decoration: none; 
+}
+
+.sectionsList {
+    padding: 0px;
+}
+
+.copyrightTetx {
+    font-family: "Unbounded";
+    font-size: 15px;
+    font-weight: 200;
+    color: #444444;
+    text-align: center;
+    height: 75px;
+    width: 390px;
+}
+
+.ico {
+    height: 20px;
+    width: 20px;
+}
+
+.socialmediaDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer {
+    background-color: #7D6E83;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    margin-top: 190px;
+}
