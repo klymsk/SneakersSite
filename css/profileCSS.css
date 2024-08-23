@@ -32,22 +32,24 @@ header {
 .mainCategories a {
     text-decoration: none;
     font-family: "Unbounded";
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 400;
     color: #444444;
+    border-bottom: 2px solid #D5B39C;
+    padding-bottom: 10px;
 }
 
 .mainCategories {
     display: flex;
     flex-direction: column;
-    gap: 60px;
-    margin-top: 70px;
+    gap: 30px;
+    margin-top: 50px;
 }
 
 .supportButton {
     text-decoration: none;
     font-family: "Unbounded";
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 400;
     color: #444444;
 }
@@ -55,7 +57,7 @@ header {
 .exitButton {
     text-decoration: none;
     font-family: "Unbounded";
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 700;
     color: #444444;
 }
@@ -69,19 +71,19 @@ header {
 .categoriesProfile {
     display: flex;
     flex-direction: column;
-    gap: 350px;
+    gap: 220px;
 }
 
 .titleSection h1 {
     font-family: "Unbounded";
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 900;
     color: #444444;
 }
 
 .titleSection h2 {
     font-family: "Unbounded";
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 500;
     color: #444444;
 }
@@ -92,7 +94,7 @@ header {
 
 .personalData h1 {
     font-family: "Unbounded";
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 400;
     color: #444444;
     margin-top: 0px;
@@ -101,7 +103,7 @@ header {
 
 .personalData p {
     font-family: "Unbounded";
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
     color: #444444;
     margin-top: 0px;
@@ -116,7 +118,7 @@ header {
 
 .titleStyle {
     font-family: "Unbounded";
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 500;
     color: #444444;
     margin-top: 0px;
@@ -125,7 +127,7 @@ header {
 
 .listFilter li {
     font-family: "Unbounded";
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 500;
     color: #444444;
     list-style-type: none;
@@ -139,12 +141,12 @@ header {
 }
 
 .stylesList {
-    margin-bottom: 100px;
+    margin-bottom: 70px;
 }
 
 .saveButton button {
     font-family: "Unbounded";
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 700;
     color: white;
     padding: 20px 95px;
@@ -158,14 +160,18 @@ header {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
 }
 
-main {
+.mainContainer {
     background-color: #F8EDE3;
     border-radius: 20px;
     padding: 60px 270px 60px 200px;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    gap: 370px;
+    gap: 400px;
+}
+
+main {
+    padding: 0px 100px;
 }
 
 body {
