@@ -9,6 +9,11 @@
     font-family: "Unbounded";
     font-size: 18px;
     font-weight: 100;
+    transition: color 0.3s ease;
+}
+
+.buttonNav:hover {
+    color: #F8EDE3;
 }
 
 .avaUserImg {
@@ -185,6 +190,11 @@ body {
     font-weight: 200;
     color: #444444;
     text-decoration: none;
+    transition: color 0.3 ease;
+}
+
+.sectionName:hover {
+    color: #F8EDE3;
 }
 
 .sectionsList li {
