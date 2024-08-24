@@ -18,7 +18,7 @@
             <a href = "main.html" class = "buttonNav">Каталог</a>
             <a href = "stores.html" class = "buttonNav">Магазини</a>
             <a href = "#" class = "buttonNav">Розпродаж</a>
-            <a href = "#" class = "buttonNav">Допомога</a>
+            <a href = "AboutUs.html#targetSection" class = "buttonNav">Допомога</a>
             <a href = "profile.html" class = "avaUserDiv">
                 <img src = "img/ava.png" class = "avaUserImg">
             </a>
@@ -52,32 +52,38 @@
                     <div class = "personalData">
                         <div>
                             <h1>Ім'я:</h1>
-                            <p>Name</p>
+                            <p id="name">Name</p>
+                            <input type="text" id="nameInput" value="Name" style="display:none;">
                         </div>
-        
+                    
                         <div>
                             <h1>Прізвище:</h1>
-                            <p>Surname</p>
+                            <p id="surname">Surname</p>
+                            <input type="text" id="surnameInput" value="Surname" style="display:none;">
                         </div>
-        
+                    
                         <div>
                             <h1>Дата народження:</h1>
-                            <p>07.07.1997</p>
+                            <p id="dob">07.07.1997</p>
+                            <input type="date" id="dobInput" value="1997-07-07" style="display:none;">
                         </div>
-        
+                    
                         <div>
-                            <h1>Місто проживання</h1>
-                            <p>м. Черкаси</p>
+                            <h1>Місто проживання:</h1>
+                            <p id="city">м. Черкаси</p>
+                            <input type="text" id="cityInput" value="м. Черкаси" style="display:none;">
                         </div>
-        
+                    
                         <div>
                             <h1>Телефон:</h1>
-                            <p>(001)-456-12-34</p>
+                            <p id="phone">(001)-456-12-34</p>
+                            <input type="text" id="phoneInput" value="(001)-456-12-34" style="display:none;">
                         </div>
-        
+                    
                         <div>
                             <h1>E-mail:</h1>
-                            <p>example@smth.com</p>
+                            <p id="email">example@smth.com</p>
+                            <input type="email" id="emailInput" value="example@smth.com" style="display:none;">
                         </div>
                     </div>
                 </div>
@@ -120,7 +126,7 @@
                 </div>
     
                 <div class = "saveButton">
-                    <button>Зберегти дані</button>
+                    <button id="editButton" onclick="toggleEdit()">Редагувати</button>
                 </div>
             </div>
         </div>
@@ -139,7 +145,7 @@
                     <a href = "#" class = "sectionName">Розпродаж</a>
                 </li>
                 <li>
-                    <a href = "#" class = "sectionName">Про нас</a>
+                    <a href = "AboutUs.html" class = "sectionName">Про нас</a>
                 </li>
             </ul>
 
@@ -161,5 +167,31 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        function toggleEdit() {
+    const editButton = document.getElementById('editButton');
+
+ 
+    const elements = ['name', 'surname', 'dob', 'city', 'phone', 'email'];
+    elements.forEach(el => {
+        const p = document.getElementById(el);
+        const input = document.getElementById(el + 'Input');
+        
+        if (input.style.display === 'none') {
+
+            p.style.display = 'none';
+            input.style.display = 'block';
+            editButton.textContent = 'Зберегти';
+        } else {
+
+            p.textContent = input.value;
+            p.style.display = 'block';
+            input.style.display = 'none';
+            editButton.textContent = 'Редагувати';
+        }
+    });
+}
+    </script>
 </body>
 </html>
