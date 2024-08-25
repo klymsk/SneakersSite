@@ -21,9 +21,12 @@ header {
 
 .infoUserContainer h1 {
     font-family: "Unbounded";
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 25px;
+    font-weight: 700;
     color: #444444;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
 }
 
 .infoUserContainer h2 {
@@ -31,6 +34,48 @@ header {
     font-size: 15px;
     font-weight: 200;
     color: #444444;
+}
+
+.infoUserContainer input {
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-family: "Unbounded";
+    font-size: 15px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.infoUserContainer button {
+    font-family: "Unbounded";
+    font-size: 20px;
+    font-weight: 400;
+    color: #444444;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    border: none;
+    outline: none;
+    padding: 35px 30px;
+}
+
+.inputContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px; 
+    margin-bottom: 90px;
+}
+
+.deliveryContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+}
+
+.paymentContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
 }
 
 .infoUserContainer {
@@ -44,6 +89,51 @@ header {
     display: flex;
     flex-direction: row;
     gap: 25px;
+}
+
+.itemContainer h1 {
+    font-family: "Unbounded";
+    font-size: 25px;
+    font-weight: 700;
+    color: #444444;
+}
+
+.itemInfo img {
+    width: 30%; 
+}
+
+.itemInfo h2 {
+    font-family: "Unbounded";
+    font-size: 20px;
+    font-weight: 500;
+    color: #444444;
+}
+
+.itemInfo p {
+    font-family: "Unbounded";
+    font-size: 15px;
+    font-weight: 300;
+    color: #444444;
+}
+
+.itemInfo span {
+    font-family: "Unbounded";
+    font-size: 15px;
+    font-weight: 100;
+    color: #444444;
+}
+
+.itemContainer {
+    background-color: #F4E3D3;
+    border-radius: 20px;
+    padding: 60px 90px;
+    box-sizing: border-box; 
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
 }
 
 body {
