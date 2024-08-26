@@ -1,0 +1,232 @@
+.mainLogoDiv {
+    height: 100px;
+    width: 100px;
+}
+
+.mainTitle {
+    font-family: "Unbounded";
+    font-size: 25px;
+    font-weight: 800;
+    color: #444444;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.containerOfUser h1 {
+    font-family: "Unbounded";
+    font-size: 25px;
+    font-weight: 700;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.containerOfUser h2 {
+    font-family: "Unbounded";
+    font-size: 15px;
+    font-weight: 200;
+    color: #444444;
+}
+
+.inputContainer input {
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-family: "Unbounded";
+    font-size: 20px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+.inputContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px; 
+}
+
+.containerOfUser button {
+    background-color:  white;
+    border-radius: 20px;
+    font-family: "Unbounded";
+    font-size: 20px;
+    font-weight: 500;
+    color: black; 
+    height: 100px;
+    width: 200px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    border: none;
+    outline: none;
+}
+
+.containerOfUser button:active {
+    transform: scale(0.95); 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.deliveryDiv input {
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-family: "Unbounded";
+    font-size: 20px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    width: 100%; 
+    box-sizing: border-box;
+    width: 60%;
+}
+
+.buttonsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contactUser {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.deliveryDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.paymentDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.containerOfUser {
+    background-color: #F4E3D3;
+    border-radius: 20px;
+    padding: 60px 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.titleItem {
+    font-family: "Unbounded";
+    font-size: 25px;
+    font-weight: 700;
+    color: black;
+}
+
+.itemInfo img {
+    height: auto;
+    width: 30%;
+    border-radius: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.itemInfo h1 {
+    font-family: "Unbounded";
+    font-size: 20px;
+    font-weight: 900;
+    color: black; 
+    margin-bottom: 5px;
+}
+
+.itemInfo h2 {
+    font-family: "Unbounded";
+    font-size: 15px;
+    font-weight: 800;
+    color: #444444; 
+    margin-bottom: 5px;
+}
+
+.itemInfo p {
+    font-family: "Unbounded";
+    font-size: 15px;
+    font-weight: 400;
+    color: #444444; 
+    margin: 0px;
+}
+
+.nameNPrice {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.priceInfo h1 {
+    font-family: "Unbounded";
+    font-size: 15px;
+    font-weight: 600;
+    color: #444444; 
+}
+
+.txtPrice {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.priceInfo h2 {
+    font-family: "Unbounded";
+    font-size: 15px;
+    font-weight: 300;
+    color: #444444; 
+}
+
+.containerItem button {
+    font-family: "Unbounded";
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+    background-color: #7D6E83;
+    border-radius: 20px;
+    padding: 20px 100px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+.containerItem button:active {
+    transform: scale(0.95); 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.itemInfo {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.containerItem {
+    background-color: #F4E3D3;
+    border-radius: 20px;
+    padding: 60px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    height: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+body {
+    background-color: #D5B39C;
+    margin: 0px;
+    padding: 40px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
