@@ -87,7 +87,7 @@ header {
 .buttonsContainer {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 80px;
 }
 
 .contactUser {
@@ -158,7 +158,7 @@ header {
 .nameNPrice {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
 }
 
 .priceInfo h1 {
@@ -198,6 +198,13 @@ header {
 .containerItem button:active {
     transform: scale(0.95); 
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.commentTxt p {
+    font-family: "Unbounded";
+    font-size: 15px;
+    font-weight: 200;
+    color: #7D6E83; 
 }
 
 .itemInfo {
