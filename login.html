@@ -19,7 +19,7 @@
     </header>
 
     <main>
-        <form id = "mainForm" onsubmit = "checkUser()">
+        <form id = "mainForm" onsubmit="return checkUser(event)">
             <div class = "inputContainer">
                 <div class = "titleNInput">
                     <h1>Логін</h1>
@@ -37,26 +37,25 @@
     </main>
 
     <script>
-        var login = document.getElementById("loginUser");
-        var password = document.getElementById("passwordUser");
+        function checkUser(el) {
+            event.preventDefault();
 
-        var checkLogin = login.value;
+            var login = document.getElementById("loginUser").value;
+            var password = document.getElementById("passwordUser").value;
 
-        console.log(checkLogin);
+            var saveLogin = "user1234";
+            var savePassword = "12345";
 
-        return false;
-
-        //var saveLogin = "user1234";
-        //var savePassword = "12345";
-
-        //function checkUser(el) {
-        //    if (login == saveLogin && password == savePassword) {
-        //    console.log("ви увійшли в акаунт");
-        //    }
-        //    else {
-        //    console.log("не правильні дані користувача");
-        //    }
-        //}
+            if (login === saveLogin && password === savePassword) {
+                localStorage.setItem('userLoggedIn', 'true');
+                console.log("Ви увійшли в акаунт");
+                alert("Ви успішно увійшли в акаунт!");
+                window.location.href = "main.html";
+            } else {
+                console.log("Неправильні дані користувача");
+                alert("Логін або пароль неправильні. Спробуйте ще раз.");
+            }
+        }
     </script>
 </body>
 </html>
