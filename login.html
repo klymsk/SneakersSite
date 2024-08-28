@@ -19,18 +19,44 @@
     </header>
 
     <main>
-        <div class = "inputContainer">
-            <div class = "titleNInput">
-                <h1>Логін</h1>
-                <input type = "text">
+        <form id = "mainForm" onsubmit = "checkUser()">
+            <div class = "inputContainer">
+                <div class = "titleNInput">
+                    <h1>Логін</h1>
+                    <input type = "text" id = "loginUser">
+                </div>
+                <div class = "titleNInput">
+                    <h1>Пароль</h1>
+                    <input type = "password" id = "passwordUser">
+                </div>
             </div>
-            <div class = "titleNInput">
-                <h1>Пароль</h1>
-                <input type = "text">
-            </div>
-        </div>
 
-        <button>Увійти</button>
+            <button type = "submit" id = "buttonSubmit">Увійти</button>
+        </form>
+
     </main>
+
+    <script>
+        var login = document.getElementById("loginUser");
+        var password = document.getElementById("passwordUser");
+
+        var checkLogin = login.value;
+
+        console.log(checkLogin);
+
+        return false;
+
+        //var saveLogin = "user1234";
+        //var savePassword = "12345";
+
+        //function checkUser(el) {
+        //    if (login == saveLogin && password == savePassword) {
+        //    console.log("ви увійшли в акаунт");
+        //    }
+        //    else {
+        //    console.log("не правильні дані користувача");
+        //    }
+        //}
+    </script>
 </body>
 </html>
