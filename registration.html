@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = "css/registrationCSS.css">
+</head>
+<body>
+    <header>
+        <a href = "main.html" class = "mainLogoDiv">
+            <img src = "img/logoHeader.png" class = "mainLogoImg">
+        </a>
+
+        <h1 class = "mainTitle">Реєстрація нового користувача</h1>
+    </header>
+
+    <main>
+        <form id = "mainForm" onsubmit="return addNewUser(event)">
+            <div class = "inputContainer">
+                <div class = "titleNInput">
+                    <h1>Логін</h1>
+                    <input type = "text" id = "loginUser">
+                </div>
+                <div class = "titleNInput">
+                    <h1>Пароль</h1>
+                    <input type = "password" id = "passwordUser">
+                </div>
+            </div>
+
+            <button type = "submit" id = "buttonSubmit">Зареєструватися</button>
+        </form>
+
+    </main>
+
+    <script>
+        function addNewUser(el) {
+            event.preventDefault();
+
+            var newLogin = document.getElementById("loginUser").value;
+            var newPassword = document.getElementById("passwordUser").value;
+
+            
+        }
+    </script>
+</body>
+</html>
