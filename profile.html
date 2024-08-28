@@ -38,7 +38,7 @@
         
                 <div class = "addCategpries">
                     <a href = "#" class = "supportButton">Служба підтримки</a>
-                    <a href = "#" class = "exitButton">Вийти</a>
+                    <a href = "#" class = "exitButton" id="logoutButton">Вийти</a>
                 </div>
             </div>
     
@@ -192,6 +192,11 @@
         }
     });
 }
+
+document.getElementById('logoutButton').addEventListener('click', function() {
+        localStorage.removeItem('userLoggedIn'); 
+        window.location.href = "main.html"; 
+    });
     </script>
 </body>
 </html>

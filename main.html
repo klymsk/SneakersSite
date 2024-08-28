@@ -19,9 +19,9 @@
             <a href = "stores.html" class = "buttonNav">Магазини</a>
             <a href = "#" class = "buttonNav">Розпродаж</a>
             <a href = "AboutUs.html#targetSection" class = "buttonNav">Допомога</a>
-            <a href = "profile.html" class = "avaUserDiv">
-                <img src = "img/ava.png" class = "avaUserImg">
-            </a>
+            <div id="userNav">
+                <a href="login.html" id="loginButton" class="buttonNav">Увійти</a>
+            </div>
         </nav>
     </header>
     <main>
@@ -275,6 +275,26 @@
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+        const userLoggedIn = localStorage.getItem('userLoggedIn');
+
+        if (userLoggedIn) {
+            // Якщо користувач увійшов, замінюємо кнопку на аватарку
+            document.getElementById("userNav").innerHTML = `
+                <a href="profile.html" class="avaUserDiv">
+                    <img src="img/ava.png" class="avaUserImg">
+                </a>
+            `;
+            console.log(localStorage.getItem('userLoggedIn'));
+        }
+        else {
+            document.getElementById("userNav").innerHTML = `
+                <a href="login.html" class="buttonNav">Увійти</a>
+            `;
+        }
+    });
+    
     </script>
 </body>
 </html>
