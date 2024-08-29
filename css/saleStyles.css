@@ -1,0 +1,211 @@
+.mainLogoDiv {
+    height: 100px;
+    width: 100px;
+}
+
+.buttonNav {
+    text-decoration: none;
+    color: black;
+    font-family: "Unbounded";
+    font-size: 18px;
+    font-weight: 100;
+    transition: color 0.3s ease;
+}
+
+.buttonNav:hover {
+    color: #F8EDE3;
+}
+
+.avaUserImg {
+    height: 70px;
+    width: 70px;
+}
+
+nav {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+header {
+    margin: 50px 50px 100px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+body {
+    background-color: #D5B39C;
+    margin: 0px;
+}
+
+.salesTitle {
+    font-family: "Unbounded";
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    background-color: #FF5B5B;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 5px 10px;
+}
+
+.brandsDiv {
+    display: flex;
+    flex-direction: row; 
+    gap: 50px;
+    justify-content: flex-end;
+    margin-bottom: 50px;
+}
+
+.brandLogoImg {
+    height: 90px;
+    width: 90px;
+}
+
+label {
+    color: #7D6E83;
+    font-family: "Unbounded";
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.headerFilter {
+    color: #7D6E83;
+    font-family: "Unbounded";
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.listFilter {
+    list-style-type: none;
+    padding-left: 10px;
+    border-bottom: 1px solid #D5B39C;
+    padding-bottom: 20px;
+}
+
+.topicDiv {
+    width: 200px;
+}
+
+.filterDiv {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+
+.itemImg {
+    height: 280px;
+    width: 310px;
+    margin-top: 20px;
+}
+
+.itemDiv {
+    height: 370px;
+    width: 310px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px 10px 35px 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.itemName {
+    font-family: "Unbounded";
+    font-size: 20px;
+    font-weight: 700;
+    color: #444444;
+    margin-bottom: 5px;
+}
+
+.newItemPrice {
+    font-family: "Unbounded";
+    font-size: 20px;
+    font-weight: 600;
+    color: #FF5B5B;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.oldItemPrice {
+    font-family: "Unbounded";
+    font-size: 15px;
+    font-weight: 400;
+    color: #444444;
+    text-decoration: line-through;
+    margin-top: 0px;
+}
+
+.catalogDiv {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px; 
+}
+
+.filterNCatalog {
+    display: flex;
+    flex-direction: row;
+    gap: 300px;
+}
+
+main {
+    background-color: #F8EDE3;
+    padding: 50px 280px 20px 60px;
+    border-radius: 20px;
+}
+
+.sectionName {
+    font-family: "Unbounded";
+    font-size: 15px;
+    font-weight: 200;
+    color: #444444;
+    text-decoration: none;
+    transition: color 0.3 ease;
+}
+
+.sectionName:hover {
+    color: #F8EDE3;
+}
+
+.sectionsList li {
+    list-style-type: none; 
+    padding-left: 0; 
+    margin: 0;
+    text-decoration: none; 
+}
+
+.sectionsList {
+    padding: 0px;
+}
+
+.copyrightTetx {
+    font-family: "Unbounded";
+    font-size: 15px;
+    font-weight: 200;
+    color: #444444;
+    text-align: center;
+    height: 75px;
+    width: 390px;
+}
+
+.ico {
+    height: 20px;
+    width: 20px;
+}
+
+.socialmediaDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer {
+    background-color: #7D6E83;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    margin-top: 190px;
+}
