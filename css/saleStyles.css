@@ -39,6 +39,7 @@ body {
     margin: 0px;
 }
 
+
 .salesTitle {
     font-family: "Unbounded";
     font-size: 20px;
@@ -150,7 +151,6 @@ label {
 main {
     background-color: #F8EDE3;
     padding: 50px 280px 20px 60px;
-    border-radius: 20px;
 }
 
 .sectionName {
