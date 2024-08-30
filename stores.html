@@ -26,11 +26,19 @@
     </header>
 
     <main>
-        <div class = "mainTitles">
+        <div class="mainTitles">
             <h1>Наші магазини</h1>
-            <a href = "#">
+            <a href="#" onclick="cityMenu()">
                 <h2>Оберіть місто</h2>
             </a>
+        </div>
+        
+        <div id="cityMenu" class="cityMenu">
+            <ul>
+                <li onclick="changeCity('Kyiv')">Kyiv</li>
+                <li onclick="changeCity('Lviv')">Lviv</li>
+                <li onclick="changeCity('Odesa')">Odessa</li>
+            </ul>
         </div>
 
         <div class = "contentSection">
@@ -93,5 +101,21 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        function cityMenu() {
+    var menu = document.getElementById('cityMenu');
+    if (menu.style.display === 'none' || menu.style.display === '') {
+        menu.style.display = 'block';
+    } else {
+        menu.style.display = 'none';
+    }
+}
+
+function changeCity(city) {
+    document.getElementById('content').innerHTML = "Ви обрали місто: " + city;
+    cityMenu(); 
+}
+    </script>
 </body>
 </html>
