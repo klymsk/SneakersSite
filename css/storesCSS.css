@@ -49,6 +49,41 @@ header {
     text-decoration: none;
 }
 
+.cityMenu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cityMenu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cityMenu li {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.cityMenu li:hover {
+    background-color: #f0f0f0;
+}
+
+.cityMenu a {
+    display: block;
+    padding: 5px 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.cityMenu a:hover {
+    background-color: #f0f0f0;
+}
+
 .mainTitles {
     display: flex;
     flex-direction: row;
