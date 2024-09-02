@@ -211,15 +211,17 @@
                         </div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
-    
-                    <div class = "commentDiv">
-                        <div class = "userAvaNName">
-                            <a href = "#" class = "userAva">
-                                <img src = "img/circle.png" class = "userAvaImg">
-                            </a>
-                            <h1 class = "userNickName">Name Name</h1>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                    <div class = "userComment">
+                        <!-- Коментарі будуть додаватися сюди -->
+                    </div>
+                </div>
+
+                <div class = "newComment">
+                    <label>Ваш відгук:</label>
+                    <div class = "inputNewComment">
+                        <input type = "text" id = "inputComment" placeholder = "Коментар...">
+                        <button id="submitButton" onclick = "sendComment()">></button>
                     </div>
                 </div>
             </div>
@@ -263,34 +265,68 @@
         </div>
     </footer>
 
-    <script>
-        const items = document.querySelectorAll('.itemDiv');
-
-        items.forEach(item => {
-        item.addEventListener('click', (event) => {
-        event.preventDefault();
-        const itemName = item.getAttribute('data-name');
-        document.title = itemName;
-    });
-});
-
-        function updateTabTitle() {
-            var modelName = document.getElementById('itemModel').innerText;
-            document.title = modelName;
-        }
-
-        window.onload = updateTabTitle;
-
-        document.getElementById('toggle-chart').addEventListener('click', function() {
-    const chart = document.getElementById('size-chart');
-    if (chart.style.display === 'none' || chart.style.display === '') {
-        chart.style.display = 'table';
-        this.textContent = 'Сховати';
-    } else {
-        chart.style.display = 'none';
-        this.textContent = 'Показати';
-    }
-});
-    </script>
+    <script src="js/itemPageScript.js"></script>
 </body>
 </html>
+
+<!--<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Відгуки</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="commentsBlock">
+        <h1 class="titleComments">Відгуки</h1>
+
+        <div class="commentMessage">
+            <div class="commentDiv">
+                <div class="userAvaNName">
+                    <a href="#" class="userAva">
+                        <img src="img/circle.png" class="userAvaImg">
+                    </a>
+                    <h1 class="userNickName">Name Name</h1>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+            <div class="commentDiv">
+                <div class="userAvaNName">
+                    <a href="#" class="userAva">
+                        <img src="img/circle.png" class="userAvaImg">
+                    </a>
+                    <h1 class="userNickName">Name Name</h1>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+            <div class="commentDiv">
+                <div class="userAvaNName">
+                    <a href="#" class="userAva">
+                        <img src="img/circle.png" class="userAvaImg">
+                    </a>
+                    <h1 class="userNickName">Name Name</h1>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+            <div id="commentsSection" class="userComment">
+                
+            </div>
+        </div>
+
+        <div class="newComment">
+            <label for="inputComment">Ваш відгук:</label>
+            <div class="inputNewComment">
+                <input type="text" id="inputComment" placeholder="Коментар...">
+                <button id="submitButton" onclick="sendComment()">Надіслати</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+-->
