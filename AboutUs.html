@@ -17,7 +17,7 @@
         <nav>
             <a href = "main.html" class = "buttonNav">Каталог</a>
             <a href = "stores.html" class = "buttonNav">Магазини</a>
-            <a href = "#" class = "buttonNav">Розпродаж</a>
+            <a href = "salePage.html" class = "buttonNav">Розпродаж</a>
             <a href = "AboutUs.html#targetSection" class = "buttonNav">Допомога</a>
             <a href = "profile.html" class = "avaUserDiv">
                 <img src = "img/ava.png" class = "avaUserImg">
@@ -74,19 +74,19 @@
             <div class = "socialMedia">
                 <h1>Ми в соц. мережах</h1>
                 <a href = "#" class = "socialMLink">
-                    <p>Офіційна інстаграм-сторінка бренду - </p>
+                    <p>Офіційна інстаграм-сторінка бренду -</p>
                     <img src = "img/insta_ico.ico" class = "socialMLogo">
                 </a>
                 <a href = "#" class = "socialMLink">
-                    <p>Офіційна твіттер-сторінка бренду - </p>
+                    <p>Офіційна твіттер-сторінка бренду -</p>
                     <img src = "img/twitter_ico.ico" class = "socialMLogo">
                 </a>
                 <a href = "#" class = "socialMLink">
-                    <p>Офіційна фейсбук-сторінка бренду - </p>
+                    <p>Офіційна фейсбук-сторінка бренду -</p>
                     <img src = "img/fb_ico.ico" class = "socialMLogo">
                 </a>
                 <a href = "#" class = "socialMLink">
-                    <p>Офіційна тікток-сторінка бренду - </p>
+                    <p>Офіційна тікток-сторінка бренду -</p>
                     <img src = "img/insta_ico.ico" class = "socialMLogo">
                 </a>
             </div>
@@ -103,7 +103,7 @@
                     <a href = "profile.html" class = "sectionName">Профіль</a>
                 </li>
                 <li>
-                    <a href = "#" class = "sectionName">Розпродаж</a>
+                    <a href = "salePage.html" class = "sectionName">Розпродаж</a>
                 </li>
                 <li>
                     <a href = "AboutUs.html" class = "sectionName">Про нас</a>
@@ -129,26 +129,6 @@
         </div>
     </footer>
     
-    <script>
-        function copyText() {
-    
-            var textToCopy = document.getElementById("textToCopy").innerText;
-            
-            
-            var tempInput = document.createElement("textarea");
-            tempInput.value = textToCopy;
-            document.body.appendChild(tempInput);
-            
-            
-            tempInput.select();
-            document.execCommand("copy");
-            
-            
-            document.body.removeChild(tempInput);
-            
-            
-            alert("Текст скопійовано!");
-}
-    </script>
+    <script src = "js/aboutUsScript.js"></script>
 </body>
 </html>

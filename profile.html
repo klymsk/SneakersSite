@@ -17,7 +17,7 @@
         <nav>
             <a href = "main.html" class = "buttonNav">Каталог</a>
             <a href = "stores.html" class = "buttonNav">Магазини</a>
-            <a href = "#" class = "buttonNav">Розпродаж</a>
+            <a href = "salePage.html" class = "buttonNav">Розпродаж</a>
             <a href = "AboutUs.html#targetSection" class = "buttonNav">Допомога</a>
             <a href = "profile.html" class = "avaUserDiv">
                 <img src = "img/ava.png" class = "avaUserImg">
@@ -142,7 +142,7 @@
                     <a href = "profile.html" class = "sectionName">Профіль</a>
                 </li>
                 <li>
-                    <a href = "#" class = "sectionName">Розпродаж</a>
+                    <a href = "salePage.html" class = "sectionName">Розпродаж</a>
                 </li>
                 <li>
                     <a href = "AboutUs.html" class = "sectionName">Про нас</a>
@@ -168,35 +168,6 @@
         </div>
     </footer>
 
-    <script>
-        function toggleEdit() {
-    const editButton = document.getElementById('editButton');
-
- 
-    const elements = ['name', 'surname', 'dob', 'city', 'phone', 'email'];
-    elements.forEach(el => {
-        const p = document.getElementById(el);
-        const input = document.getElementById(el + 'Input');
-        
-        if (input.style.display === 'none') {
-
-            p.style.display = 'none';
-            input.style.display = 'block';
-            editButton.textContent = 'Зберегти';
-        } else {
-
-            p.textContent = input.value;
-            p.style.display = 'block';
-            input.style.display = 'none';
-            editButton.textContent = 'Редагувати';
-        }
-    });
-}
-
-document.getElementById('logoutButton').addEventListener('click', function() {
-        localStorage.removeItem('userLoggedIn'); 
-        window.location.href = "main.html"; 
-    });
-    </script>
+    <script src = "js/profileScript.js"></script>
 </body>
 </html>

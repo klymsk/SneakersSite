@@ -17,7 +17,7 @@
         <nav>
             <a href = "main.html" class = "buttonNav">Каталог</a>
             <a href = "stores.html" class = "buttonNav">Магазини</a>
-            <a href = "#" class = "buttonNav">Розпродаж</a>
+            <a href = "salePage.html" class = "buttonNav">Розпродаж</a>
             <a href = "AboutUs.html#targetSection" class = "buttonNav">Допомога</a>
             <div id="userNav">
                 <a href="login.html" id="loginButton" class="buttonNav">Увійти</a>
@@ -225,7 +225,7 @@
                     <a href = "profile.html" class = "sectionName">Профіль</a>
                 </li>
                 <li>
-                    <a href = "#" class = "sectionName">Розпродаж</a>
+                    <a href = "salePage.html" class = "sectionName">Розпродаж</a>
                 </li>
                 <li>
                     <a href = "AboutUs.html" class = "sectionName">Про нас</a>
@@ -251,49 +251,6 @@
         </div>
     </footer>
 
-    <script>
-        
-        document.addEventListener('DOMContentLoaded', function() {
-        const sizeCheckboxes = document.querySelectorAll('.filterDiv input[type="checkbox"]');
-        const items = document.querySelectorAll('.itemDiv');
-
-    sizeCheckboxes.forEach(checkbox => {
-        checkbox.addEventListener('change', () => {
-            const selectedSizes = Array.from(sizeCheckboxes)
-                .filter(checkbox => checkbox.checked)
-                .map(checkbox => checkbox.value);
-
-            items.forEach(item => {
-                const itemSizes = item.getAttribute('data-sizes') ? item.getAttribute('data-sizes').split(',').map(size => size.trim()) : [];
-
-                if (selectedSizes.length === 0 || selectedSizes.some(size => itemSizes.includes(size))) {
-                    item.style.display = 'block';
-                } else {
-                    item.style.display = 'none';
-                }
-            });
-        });
-    });
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-        const userLoggedIn = localStorage.getItem('userLoggedIn');
-
-        if (userLoggedIn) {
-            document.getElementById("userNav").innerHTML = `
-                <a href="profile.html" class="avaUserDiv">
-                    <img src="img/ava.png" class="avaUserImg">
-                </a>
-            `;
-            console.log(localStorage.getItem('userLoggedIn'));
-        }
-        else {
-            document.getElementById("userNav").innerHTML = `
-                <a href="login.html" class="buttonNav">Увійти</a>
-            `;
-        }
-    });
-    
-    </script>
+    <script src = "js/mainScript.js"></script>
 </body>
 </html>

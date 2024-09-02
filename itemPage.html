@@ -17,7 +17,7 @@
         <nav>
             <a href = "main.html" class = "buttonNav">Каталог</a>
             <a href = "stores.html" class = "buttonNav">Магазини</a>
-            <a href = "#" class = "buttonNav">Розпродаж</a>
+            <a href = "salePage.html" class = "buttonNav">Розпродаж</a>
             <a href = "AboutUs.html#targetSection" class = "buttonNav">Допомога</a>
             <a href = "profile.html" class = "avaUserDiv">
                 <img src = "img/ava.png" class = "avaUserImg">
@@ -75,7 +75,9 @@
                     </div>
                 </div>
                 <div class = "buttons">
-                    <button class = "buyButton">ЗАМОВИТИ</button>
+                    <a href = "orderItem.html">
+                        <button class = "buyButton">ЗАМОВИТИ</button>
+                    </a>
                     <button class = "aditionalButton">
                         <img src = "img/shopping_basket.ico" class = "addButImg">
                     </button>
@@ -221,7 +223,9 @@
                     <label>Ваш відгук:</label>
                     <div class = "inputNewComment">
                         <input type = "text" id = "inputComment" placeholder = "Коментар...">
-                        <button id="submitButton" onclick = "sendComment()">></button>
+                        <button id="submitButton" onclick = "sendComment()">
+                            <img src = "img/send_icon.ico" class = "buttonComLogo">
+                        </button>
                     </div>
                 </div>
             </div>
@@ -239,7 +243,7 @@
                     <a href = "profile.html" class = "sectionName">Профіль</a>
                 </li>
                 <li>
-                    <a href = "#" class = "sectionName">Розпродаж</a>
+                    <a href = "salePage.html" class = "sectionName">Розпродаж</a>
                 </li>
                 <li>
                     <a href = "AboutUs.html" class = "sectionName">Про нас</a>
@@ -268,65 +272,3 @@
     <script src="js/itemPageScript.js"></script>
 </body>
 </html>
-
-<!--<!DOCTYPE html>
-<html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Відгуки</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="commentsBlock">
-        <h1 class="titleComments">Відгуки</h1>
-
-        <div class="commentMessage">
-            <div class="commentDiv">
-                <div class="userAvaNName">
-                    <a href="#" class="userAva">
-                        <img src="img/circle.png" class="userAvaImg">
-                    </a>
-                    <h1 class="userNickName">Name Name</h1>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-
-            <div class="commentDiv">
-                <div class="userAvaNName">
-                    <a href="#" class="userAva">
-                        <img src="img/circle.png" class="userAvaImg">
-                    </a>
-                    <h1 class="userNickName">Name Name</h1>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-
-            <div class="commentDiv">
-                <div class="userAvaNName">
-                    <a href="#" class="userAva">
-                        <img src="img/circle.png" class="userAvaImg">
-                    </a>
-                    <h1 class="userNickName">Name Name</h1>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-
-            <div id="commentsSection" class="userComment">
-                
-            </div>
-        </div>
-
-        <div class="newComment">
-            <label for="inputComment">Ваш відгук:</label>
-            <div class="inputNewComment">
-                <input type="text" id="inputComment" placeholder="Коментар...">
-                <button id="submitButton" onclick="sendComment()">Надіслати</button>
-            </div>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
-</body>
-</html>
--->
