@@ -29,29 +29,11 @@ const items = document.querySelectorAll('.itemDiv');
 
 function sendComment() {
     const inputComment = document.getElementById("inputComment");
-    const userComment = inputComment.ariaValueMax.trim();
+    const userComment = inputComment.value.trim();
 
     if (userComment) {
         const commentDiv = document.createElement("div");
-        commentDiv.className = "comment";
-        commentDiv.innerHTML = "<p>${userComment}</p>";
-
-        commentsSection.appendChild(commentDiv);
-
-        commentInput.value = '';
-    }
-}
-
-/*// script.js
-function sendComment() {
-    const commentInput = document.getElementById('inputComment');
-    const commentsSection = document.getElementById('commentsSection');
-    const userComment = commentInput.value.trim(); // Отримати текст з поля вводу
-
-    if (userComment) {
-        // Створити новий HTML-елемент для коментаря
-        const commentDiv = document.createElement('div');
-        commentDiv.className = 'commentDiv'; // Додати клас для стилізації
+        commentDiv.className = "commentDiv";
         commentDiv.innerHTML = `
             <div class="userAvaNName">
                 <a href="#" class="userAva">
@@ -60,15 +42,12 @@ function sendComment() {
                 <h1 class="userNickName">Name Name</h1>
             </div>
             <p>${userComment}</p>
-        `; // Вставити коментар
+        `;
 
-        // Додати новий коментар до секції коментарів
+        const commentsSection = document.querySelector(".userComment");
         commentsSection.appendChild(commentDiv);
 
-        // Очистити поле вводу після надсилання
-        commentInput.value = '';
-    } else {
-        alert('Будь ласка, введіть коментар.');
+        inputComment.value = '';
     }
 }
-*/
+
