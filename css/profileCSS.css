@@ -114,6 +114,19 @@ header {
     margin-top: 0px;
 }
 
+.personalData input {
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-family: "Unbounded";
+    font-size: 10px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    width: 100%; 
+    box-sizing: border-box;
+    width: 60%;
+}
+
 .personalData {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

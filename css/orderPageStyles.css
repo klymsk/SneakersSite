@@ -37,13 +37,15 @@ header {
 }
 
 .infoUserContainer input {
-    padding: 5px 15px;
+    padding: 10px 15px;
     border-radius: 20px;
     font-family: "Unbounded";
     font-size: 15px;
     border: none;
     outline: none;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    width: 100%; 
+    box-sizing: border-box;
 }
 
 .infoUserContainer button {
@@ -56,7 +58,12 @@ header {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
     border: none;
     outline: none;
-    padding: 35px 30px;
+    height: 100px;
+    width: 200px;
+}
+
+.inputDiv input {
+    width: 60%;
 }
 
 .inputContainer {
@@ -88,18 +95,29 @@ header {
 .mainContent {
     display: flex;
     flex-direction: row;
-    gap: 25px;
+    justify-content: space-between;
 }
 
-.itemContainer h1 {
+.titleItem {
     font-family: "Unbounded";
     font-size: 25px;
     font-weight: 700;
+    color: #444444; 
+    margin-bottom: 70px;
+}
+
+.itemInfo h1 {
+    font-family: "Unbounded";
+    font-size: 25px;
+    font-weight: 900;
     color: #444444;
 }
 
 .itemInfo img {
-    width: 30%; 
+    height: auto;
+    width: 40%; 
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .itemInfo h2 {
@@ -123,11 +141,57 @@ header {
     color: #444444;
 }
 
+.priceInfo h2 {
+    font-family: "Unbounded";
+    font-size: 15px;
+    font-weight: 200;
+    color: #444444;
+}
+
+.priceInfo h1 {
+    font-family: "Unbounded";
+    font-size: 20px;
+    font-weight: 700;
+    color: #444444;
+}
+
+.txtPrice {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.priceInfo {
+    margin-bottom: 70px;
+}
+
+.button button {
+    font-family: "Unbounded";
+    font-size: 15px;
+    font-weight: 900;
+    color: white;
+    background-color: #7D6E83;
+    border-radius: 20px;
+    padding: 20px 100px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    border: none;
+    outline: none;
+}
+
+.itemInfo {
+    display: flex;
+    flex-direction: row;
+    gap: 33px;
+    margin-bottom: 40px;
+}
+
 .itemContainer {
     background-color: #F4E3D3;
     border-radius: 20px;
-    padding: 60px 90px;
+    padding: 60px 50px;
     box-sizing: border-box; 
+    height: 100%;
+    width: 40%;
 }
 
 main {

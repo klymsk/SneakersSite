@@ -27,18 +27,18 @@ nav {
     align-items: center;
 }
 
-header {
+.mainHeader {
     margin: 50px 50px 100px 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-body {
-    background-color: #D5B39C;
-    margin: 0px;
+.saleDiv {
+    width: 100vw; 
+    overflow: hidden; 
+    z-index: 1; 
 }
-
 
 .salesTitle {
     font-family: "Unbounded";
@@ -49,6 +49,23 @@ body {
     text-transform: uppercase;
     white-space: nowrap;
     padding: 5px 10px;
+    animation: marquee 25s linear infinite;
+    margin-bottom: 0px;
+    display: inline-block;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(50%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+body {
+    background-color: #D5B39C;
+    margin: 0px;
 }
 
 .brandsDiv {

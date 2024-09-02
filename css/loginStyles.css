@@ -64,6 +64,17 @@ main button {
     gap: 70px;
 }
 
+.registrationTxt h1 {
+    font-family: "Unbounded";
+    font-size: 15px;
+    font-weight: 200;
+    color: #444444; 
+}
+
+.registrationTxt {
+    text-decoration: none;
+}
+
 form {
     display: flex;
     flex-direction: column;

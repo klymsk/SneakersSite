@@ -41,12 +41,12 @@ header {
     color: #444444;
 }
 
-.mainTitles a {
+.mainTitles h2 {
     font-family: "Unbounded";
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 900;
     color: #7D6E83;
-    text-decoration: none;
+    cursor: pointer;
 }
 
 .cityMenu {
@@ -58,13 +58,11 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.cityMenu ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
 .cityMenu li {
+    font-family: "Unbounded";
+    font-size: 15px;
+    font-weight: 600;
+    color: #444444;
     padding: 5px 10px;
     cursor: pointer;
 }
@@ -73,15 +71,16 @@ header {
     background-color: #f0f0f0;
 }
 
-.cityMenu a {
-    display: block;
-    padding: 5px 10px;
-    color: #333;
-    text-decoration: none;
+.cityMenu ul {
+    list-style-type: none;
+    padding: 0px;
 }
 
-.cityMenu a:hover {
-    background-color: #f0f0f0;
+.cityMenu {
+    background-color: white;
+    border-radius: 20px;
+    height: 160px;
+    width: 140px;
 }
 
 .mainTitles {

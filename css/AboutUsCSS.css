@@ -147,6 +147,9 @@ header {
     font-weight: 200;
     color: white; 
     text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
 }
 
 .socialMedia h1 {
@@ -170,6 +173,7 @@ header {
 .socialMLogo {
     height: 20px;
     width: 20px;
+    margin-top: 15px;
 }
 
 .secondContainer {
