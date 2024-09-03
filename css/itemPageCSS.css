@@ -46,9 +46,23 @@ body {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .imgSneakersImg {
+        height: 380px;
+        width: 440px;
+    }
+}
+
 .imgSneakersDiv {
     height: 620px;
     width: 680px;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .imgSneakersDiv {
+        height: 380px;
+        width: 440px;
+    }
 }
 
 .itemName {
@@ -59,12 +73,24 @@ body {
     margin-bottom: 0px;
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .itemName {
+        font-size: 30px;
+    }
+}
+
 .itemArticle {
     font-family: "Unbounded";
     font-size: 20px;
     font-weight: 100;
     color: 444444;
     margin-top: 0px;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .itemArticle {
+        font-size: 10px;
+    }
 }
 
 .itemPrice {
@@ -75,12 +101,24 @@ body {
     margin-top: 0px;
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .itemPrice {
+        font-size: 35px;
+    }
+}
+
 .sizeTxt {
     font-family: "Unbounded";
     font-size: 30px;
     font-weight: 700;
     color: 444444;
     margin-top: 0px;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .sizeTxt {
+        font-size: 20px;
+    }
 }
 
 .itemSize {
@@ -138,6 +176,15 @@ body {
     color: white;
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .buyButton {
+        height: auto;
+        width: auto;
+        padding: 10px 50px;
+        font-size: 20px;
+    }
+}
+
 .buyButton:active {
     transform: scale(0.95); 
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
@@ -148,6 +195,13 @@ body {
     width: 25px;
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .addButImg {
+        height: 20px;
+        width: 20px;
+    }
+}
+
 .aditionalButton {
     height: 65px;
     width: 80px;
@@ -156,6 +210,13 @@ body {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
     border: none;
     outline: none;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .aditionalButton {
+        height: auto;
+        padding: 10px 0px;
+    }
 }
 
 .aditionalButton:active {
@@ -169,6 +230,11 @@ body {
     gap: 20px;
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .buttons {
+        gap: 10px;
+    }
+}
 
 .mainInfo {
     display: flex;
@@ -176,9 +242,15 @@ body {
     gap: 30px;
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .mainInfo {
+        gap: 15px;
+    }
+}
+
 .mainBlock {
-    height: 720px;
-    width: 1560px;
+    height: 100%;
+    width: 100%;
     border-radius: 20px;
     background-color: #F8EDE3;
     padding: 50px 170px 50px 70px;
@@ -188,11 +260,23 @@ body {
     justify-content: space-between;
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .mainBlock {
+        padding: 40px 120px 40px 50px;
+    }
+}
+
 .description h1 {
     font-family: "Unbounded";
     font-size: 20px;
     font-weight: 700;
     color: 444444;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .description h1 {
+        font-size: 15px;
+    }
 }
 
 .description p {
@@ -204,6 +288,20 @@ body {
     width: 550px;
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .description p {
+        width: auto;
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .description {
+        width: 80%;
+        margin-bottom: 70px;
+    }
+}
+
 .tableNCharac h1 {
     font-family: "Unbounded";
     font-size: 20px;
@@ -213,10 +311,22 @@ body {
     flex-direction: row;
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .tableNCharac h1 {
+        font-size: 15px;
+    }
+}
+
 .tableNCharac {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .tableNCharac {
+        gap: 50px;
+    }
 }
 
 .toggle-button {
@@ -240,6 +350,12 @@ body {
     display: none;
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .size-chart {
+        width: 40%;
+    }
+}
+
 .size-chart td {
     padding: 10px;
     text-align: center;
@@ -248,12 +364,26 @@ body {
     font-weight: 200;
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .size-chart td {
+        padding: 5px;
+        font-size: 10px;
+    }
+}
+
 .size-chart th {
     padding: 10px;
     text-align: center;
     border-bottom: 1px solid #ddd;
     font-family: "Unbounded";
     font-weight: 500;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .size-chart th {
+        padding: 5px;
+        font-size: 10px;
+    }
 }
 
 .size-chart th {
@@ -270,6 +400,12 @@ body {
     margin-bottom: 0px;
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .charac p {
+        font-size: 10px;
+    }
+}
+
 .infoBlock {
     height: 780px;
     width: 840px;
@@ -277,6 +413,13 @@ body {
     padding: 50px 120px 50px 70px;
     box-sizing: border-box;
     background-color: #F8EDE3;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .infoBlock {
+        height: auto;
+        width: 580px;
+    }
 }
 
 .titleComments {
@@ -341,6 +484,12 @@ body {
     width: 50%;
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .newComment input {
+        width: 80%;
+    }
+}
+
 .newComment img {
     height: 15px;
     width: 15px;
@@ -376,6 +525,12 @@ body {
     background-color: #F8EDE3;
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .commentsBlock {
+        height: auto;
+        width: 570px;
+    }
+}
 
 .secondLineBlocks {
     display: flex;
@@ -388,6 +543,12 @@ main {
     display: flex;
     flex-direction: column;
     gap: 50px;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    main {
+        padding: 0px 100px 50px 100px;
+    }
 }
 
 .sectionName {

@@ -134,6 +134,12 @@ header {
     margin-bottom: 70px;
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .personalData {
+        gap: 20px;
+    }
+}
+
 .titleStyle {
     font-family: "Unbounded";
     font-size: 20px;
@@ -156,6 +162,12 @@ header {
     grid-template-columns: repeat(3, 1fr);
     gap: 5px; 
     padding: 0px;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .listFilter {
+        gap: 15px;
+    }
 }
 
 .stylesList {
@@ -186,6 +198,13 @@ header {
     display: flex;
     flex-direction: row;
     gap: 400px;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .mainContainer {
+        padding: 60px 60px 60px 150px;
+        gap: 200px;
+    }
 }
 
 main {

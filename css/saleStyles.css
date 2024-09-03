@@ -118,6 +118,13 @@ label {
     margin-top: 20px;
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .itemImg {
+        height: 200px;
+        width: 230px;
+    }
+}
+
 .itemDiv {
     height: 370px;
     width: 310px;
@@ -127,12 +134,25 @@ label {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .itemDiv {
+        height: 290px;
+        width: 230px;
+    }
+}
+
 .itemName {
     font-family: "Unbounded";
     font-size: 20px;
     font-weight: 700;
     color: #444444;
     margin-bottom: 5px;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .itemName {
+        font-size: 15px;
+    }
 }
 
 .newItemPrice {
@@ -144,6 +164,12 @@ label {
     margin-bottom: 0px;
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .newItemPrice {
+        font-size: 15px;
+    }
+}
+
 .oldItemPrice {
     font-family: "Unbounded";
     font-size: 15px;
@@ -151,6 +177,12 @@ label {
     color: #444444;
     text-decoration: line-through;
     margin-top: 0px;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .oldItemPrice {
+        font-size: 12px;
+    }
 }
 
 .catalogDiv {
@@ -165,9 +197,21 @@ label {
     gap: 300px;
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .filterNCatalog {
+        gap: 220px;
+    }
+}
+
 main {
     background-color: #F8EDE3;
     padding: 50px 280px 20px 60px;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    main {
+        padding: 50px 60px 20px 60px;
+    }
 }
 
 .sectionName {

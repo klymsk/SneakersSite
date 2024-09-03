@@ -41,6 +41,12 @@ header {
     color: #444444;
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .mainTitles h1 {
+        font-size: 30px;
+    }
+}
+
 .mainTitles h2 {
     font-family: "Unbounded";
     font-size: 20px;
@@ -88,6 +94,12 @@ header {
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 100px;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .mainTitles {
+        margin-bottom: 80px;
+    }
 }
 
 .address h1 {
@@ -145,6 +157,18 @@ header {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .mapImg {
+        width: 90%;
+    }
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .mapSection {
+        width: 70%;
+    }
+}
+
 .storeInfo {
     display: flex;
     flex-direction: column;
@@ -153,10 +177,22 @@ header {
     padding: 30px 0px 30px 80px;
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .storeInfo {
+        gap: 30px;
+    }
+}
+
 .contentSection {
     display: flex;
     flex-direction: row;
     gap: 150px;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .contentSection {
+        gap: 50px;
+    }
 }
 
 main {
@@ -165,6 +201,12 @@ main {
     box-sizing: border-box;
     background-color: #F8EDE3;
     border-radius: 20px;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    main {
+        margin: 70px 120px;
+    }
 }
 
 body {

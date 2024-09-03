@@ -89,6 +89,12 @@ label {
     margin-top: 20px;
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .itemImg {
+        height: 200px;
+        width: 230px;
+    }
+}
 
 .itemDiv {
     height: 370px;
@@ -99,6 +105,13 @@ label {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .itemDiv {
+        height: 270px;
+        width: 230px;
+    }
+}
+
 .itemName {
     font-family: "Unbounded";
     font-size: 20px;
@@ -107,12 +120,24 @@ label {
     margin-bottom: 5px;
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .itemName {
+        font-size: 15px;
+    }
+}
+
 .itemPrice {
     font-family: "Unbounded";
     font-size: 20px;
     font-weight: 600;
     color: #967CA1;
     margin-top: 0px;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .itemPrice {
+        font-size: 15px;
+    }
 }
 
 .itemLink {
@@ -131,10 +156,22 @@ label {
     gap: 300px;
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .filterNCatalog {
+        gap: 220px;
+    }
+}
+
 main {
     background-color: #F8EDE3;
     padding: 50px 280px 20px 60px;
     border-radius: 20px;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    main {
+        padding: 50px 60px 20px 60px;
+    }
 }
 
 .sectionName {
