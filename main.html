@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
     <link rel = "stylesheet" href = "css/mainCSS.css">
 </head>
-<body>
+<body id = "body">
     <header>
         <a href = "main.html" class = "mainLogoDiv">
             <img src = "img/logoHeader.png" class = "mainLogoImg">
@@ -25,23 +25,30 @@
         </nav>
     </header>
     <main>
-        <div class = "brandsDiv">
+        <section class = "headSection">
+            <div id = "menuIcon" class = "menu-icon">
+                <img src = "img/menu_ico.png">
+            </div>
+
             <a href = "#" class = "brandLogoDiv">
-                <img src = "img/circle.png" class = "brandLogoImg">
+                <img src = "img/adidas_logo.png" class = "brandLogoImg">
             </a>
             <a href = "#" class = "brandLogoDiv">
-                <img src = "img/circle.png" class = "brandLogoImg">
+                <img src = "img/nike_logo.png" class = "brandLogoImg">
             </a>
             <a href = "#" class = "brandLogoDiv">
-                <img src = "img/circle.png" class = "brandLogoImg">
+                <img src = "img/nb_logo.png" class = "brandLogoImg">
             </a>
             <a href = "#" class = "brandLogoDiv">
-                <img src = "img/circle.png" class = "brandLogoImg">
+                <img src = "img/puma_logo.png" class = "brandLogoImg">
             </a>
-        </div>
-        <div class = "filterNCatalog">
-            <div class = filterDiv>
-                <div class = topicDiv>
+        </section>
+
+        <div id="overlay"></div>
+        
+        <section class = "filterNCatalog">
+            <aside class = filterDiv id="filterMenu">
+                <section class = topicDiv>
                     <h1 class = "headerFilter">Розміри</h1>
                     <ul class="listFilter">
                         <li>
@@ -60,9 +67,9 @@
                             </label>
                         </li>
                     </ul>
-                </div>
+                </section>
     
-                <div class = topicDiv>
+                <section class = topicDiv>
                     <h1 class = "headerFilter">Бренди</h1>
                     <ul class = listFilter>
                         <li>
@@ -81,9 +88,9 @@
                             </label>
                         </li>
                     </ul>
-                </div>
+                </section>
     
-                <div class = topicDiv>
+                <section class = topicDiv>
                     <h1 class = "headerFilter">Кольори</h1>
                     <ul class = listFilter>
                         <li>
@@ -102,9 +109,9 @@
                             </label>
                         </li>
                     </ul>
-                </div>
+                </section>
     
-                <div class = topicDiv>
+                <section class = topicDiv>
                     <h1 class = "headerFilter">Сезон</h1>
                     <ul class = listFilter>
                         <li>
@@ -123,9 +130,9 @@
                             </label>
                         </li>
                     </ul>
-                </div>
+                </section>
     
-                <div class = topicDiv>
+                <section class = topicDiv>
                     <h1 class = "headerFilter">Призначення</h1>
                     <ul class = listFilter>
                         <li>
@@ -144,10 +151,10 @@
                             </label>
                         </li>
                     </ul>
-                </div>
-            </div>
+                </section>
+            </aside>
 
-            <div class = "catalogDiv">
+            <section class = "catalogDiv">
                 <div class = "itemDiv" data-sizes="39">
                     <a href = "itemPage.html" class = "itemLink">
                         <img src = "img/new-balance-530.png" class = "itemImg">
@@ -211,12 +218,12 @@
                         <h2 class = "itemPrice">5300 грн.</h2>
                     </a>
                 </div>
-            </div>
+            </section>
         </div>
     </main>
 
     <footer>
-        <div class = "footerContent">
+        <section class = "footerContent">
             <ul class = "sectionsList">
                 <li>
                     <a href = "main.html" class = "sectionName">Каталог</a>
@@ -248,7 +255,7 @@
                     <img src = "img/twitter_ico.ico" class = "ico">
                 </a>
             </div>
-        </div>
+        </section>
     </footer>
 
     <script src = "js/mainScript.js"></script>
