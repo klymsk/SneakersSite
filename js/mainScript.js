@@ -38,3 +38,34 @@ document.addEventListener('DOMContentLoaded', function() {
         `;
     }
 });
+
+const menuIcon = document.getElementById("menuIcon");
+const filterMenu = document.getElementById("filterMenu");
+const overlay = document.getElementById("overlay");
+const body = document.getElementById("body");
+
+menuIcon.addEventListener("click", function () {
+    filterMenu.classList.toggle("active");
+    overlay.classList.toggle("active");
+    body.classList.toggle("active");
+});
+
+menuIcon.addEventListener("touchstart", function () {
+    filterMenu.classList.toggle("active");
+    overlay.classList.toggle("active");
+    body.classList.toggle("active");
+});
+
+overlay.addEventListener("click", function () {
+    filterMenu.classList.remove("active");
+    overlay.classList.remove("active");
+    body.classList.remove("active")
+});
+
+overlay.addEventListener("touchstart", function () {
+    filterMenu.classList.remove("active");
+    overlay.classList.remove("active");
+    body.classList.remove("active")
+});
+
+
