@@ -26,21 +26,21 @@
     </header>
 
     <main>
-        <div class="mainTitles">
+        <section class="mainTitles">
             <h1>Наші магазини</h1>
             <h2 onclick="cityMenu()">Оберіть місто</h2>
-        </div>
+        </section>
         
-        <div id="cityMenu" class="cityMenu">
+        <section id="cityMenu" class="cityMenu">
             <ul>
-                <li id = "cityName" onclick="changeCity('Kyiv')">Kyiv</li>
-                <li id = "cityName" onclick="changeCity('Lviv')">Lviv</li>
-                <li id = "cityOdesa" onclick="changeCityOdesa()">Odesa</li>
+                <li class="cityName" onclick="changeCity('Kyiv')">Kyiv</li>
+                <li class="cityName" onclick="changeCity('Lviv')">Lviv</li>
+                <li class="cityName" onclick="changeCity('Odesa')">Odesa</li>
             </ul>
-        </div>
+        </section>
 
-        <div class = "contentSection">
-            <div class = "storeInfo">
+        <section class = "contentSection">
+            <div class = "storeInfo" id="storeInfo">
                 <div class = "address">
                     <h1>м. Київ</h1>
                     <h2>вул. Найковська 7</h2>
@@ -61,11 +61,11 @@
             <div class = "mapSection">
                 <img src = "img/mapImg.png" class = "mapImg">
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
-        <div class = "footerContent">
+        <section class = "footerContent">
             <ul class = "sectionsList">
                 <li>
                     <a href = "main.html" class = "sectionName">Каталог</a>
@@ -97,7 +97,7 @@
                     <img src = "img/twitter_ico.ico" class = "ico">
                 </a>
             </div>
-        </div>
+        </section>
     </footer>
 
     <script src = "js/storesScript.js"></script>
