@@ -3,11 +3,29 @@
     width: 100px;
 }
 
+@media screen and (max-width: 768px) {
+    .mainLogoDiv {
+        height: 40px;
+        width: 40px;
+    }
+
+    .mainLogoImg {
+        height: 40px;
+        width: auto;
+    }
+}
+
 .mainTitle {
     font-family: "Unbounded";
     font-size: 25px;
     font-weight: 800;
     color: #444444;
+}
+
+@media screen and (max-width: 768px) {
+    .mainTitle {
+        font-size: 10px;
+    }
 }
 
 header {
@@ -27,6 +45,12 @@ main h1 {
     justify-content: center;
 }
 
+@media screen and (max-width: 768px) {
+    main h1 {
+        font-size: 15px;
+    }
+}
+
 main input {
     padding: 10px 15px;
     border-radius: 20px;
@@ -36,6 +60,12 @@ main input {
     outline: none;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+    main input {
+        font-size: 15px;
+    }
 }
 
 .titleNInput {
@@ -58,6 +88,13 @@ main button {
     box-sizing: border-box;
 }
 
+@media screen and (max-width: 768px) {
+    main button {
+        font-size: 15px;
+        padding: 20px 50px;
+    }
+}
+
 .inputContainer {
     display: flex;
     flex-direction: column;
@@ -71,6 +108,12 @@ main button {
     color: #444444; 
 }
 
+@media screen and (max-width: 768px) {
+    .registrationTxt h1 {
+        font-size: 8px;
+    }
+}
+
 .registrationTxt {
     text-decoration: none;
 }
@@ -82,6 +125,14 @@ form {
     gap: 110px;
 }
 
+@media screen and (max-width: 768px) {
+    form {
+        gap: 80px;
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
 main {
     padding: 50px 100px;
     background-color: #F4E3D3;
@@ -89,6 +140,14 @@ main {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     height: 600px;
     width: 500px;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        padding: 50px 60px 90px 60px;
+        height: auto;
+        width: auto;
+    }
 }
 
 body {
@@ -101,3 +160,10 @@ body {
     align-items: center;
     gap: 70px;
 }
+
+@media screen and (max-width: 768px) {
+    body {
+        gap: 40px;
+    }
+}
+
