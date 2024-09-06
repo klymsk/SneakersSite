@@ -51,3 +51,30 @@ function sendComment() {
     }
 }
 
+const mobileNav = document.getElementById("nav");
+const buttons = document.getElementById("buttons")
+
+if (window.innerWidth <= 768) {
+    mobileNav.innerHTML = `
+            <a href = "main.html" class = "buttonNav">Опис</a>
+            <a href = "stores.html" class = "buttonNav">Характеристики</a>
+            <a href = "salePage.html" class = "buttonNav">Розміри</a>
+            <a href = "AboutUs.html#targetSection" class = "buttonNav">Відгуки</a>
+            <a href = "profile.html" class = "avaUserDiv">
+                <img src = "img/ava.png" class = "avaUserImg">
+            </a>
+        `;
+
+    buttons.innerHTML = `
+            <button class = "aditionalButton">
+                <img src = "img/shopping_basket.ico" class = "addButImg">
+            </button>
+            <a href = "orderItem.html">
+                <button class = "buyButton">ЗАМОВИТИ</button>
+            </a>
+            <button class = "aditionalButton">
+                <img src = "img/fav_list.ico" class = "addButImg"
+            </button>
+        `;
+}
+
