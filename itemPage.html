@@ -14,23 +14,23 @@
         <a href = "main.html" class = "mainLogoDiv">
             <img src = "img/logoHeader.png" class = "mainLogoImg">
         </a>
-        <nav>
+        <nav id = "nav">
             <a href = "main.html" class = "buttonNav">Каталог</a>
             <a href = "stores.html" class = "buttonNav">Магазини</a>
             <a href = "salePage.html" class = "buttonNav">Розпродаж</a>
             <a href = "AboutUs.html#targetSection" class = "buttonNav">Допомога</a>
-            <div id="userNav">
-                <a href="login.html" id="loginButton" class="buttonNav">Увійти</a>
-            </div>
+            <a href = "profile.html" class = "avaUserDiv">
+                <img src = "img/ava.png" class = "avaUserImg">
+            </a>
         </nav>
     </header>
     <main>
-        <div class = "mainBlock">
+        <section class = "mainBlock">
             <div class = "imgSneakersDiv">
                 <img src = "img/new-balance-530.png" class = "imgSneakersImg">
             </div>
 
-            <div class = "mainInfo">
+            <section class = "mainInfo">
                 <div class = "itemNameNArticle">
                     <h1 class = "itemName" id="itemModel">New Balance 530</h1>
                     <h1 class = "itemArticle">Артикул: AB12</h1>
@@ -74,7 +74,8 @@
                         </button>
                     </div>
                 </div>
-                <div class = "buttons">
+
+                <div class = "buttons" id = "buttons">
                     <a href = "orderItem.html">
                         <button class = "buyButton">ЗАМОВИТИ</button>
                     </a>
@@ -85,15 +86,16 @@
                         <img src = "img/fav_list.ico" class = "addButImg"
                     </button>
                 </div>
-            </div>
-        </div>
+            </section>
+        </section>
 
-        <div class = "secondLineBlocks">
-            <div class = "infoBlock">
+        <section class = "secondLineBlocks">
+            <section class = "infoBlock">
                 <div class = "description">
                     <h1>Детальний опис:</h1>
                     <p>Спортивні моделі періоду 90-х та 2000-х років створили унікальну спортивну естетику, яка вже в ті роки вийшла за межі спорту та міцно закріпилася на вулицях міст. Сьогодні, підтримуючи світові тренди, ми знову звернулися до наших архівів, щоб подарувати стильну модель для яскравих образів у міських буднях. Верх моделі виконаний з легких сітчастих матеріалів та доповнений щільними матеріалами для додаткової підтримки стопи та відображення автентичності стилю 2000-х.</p>
                 </div>
+
                 <div class = "tableNCharac">
                     <div class = "tableSizes">
                         <h1>Таблиця розмірів:</h1>
@@ -169,6 +171,7 @@
                             </tbody>
                         </table>
                     </div>
+
                     <div class = "charac">
                         <h1>Характеристики:</h1>
 
@@ -178,12 +181,12 @@
                         <p>Колір: білий</p>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class = "commentsBlock">
+            <section class = "commentsBlock">
                 <h1 class = "titleComments">Відгуки</h1>
 
-                <div class = "commentMessage">
+                <section class = "commentMessage">
                     <div class = "commentDiv">
                         <div class = "userAvaNName">
                             <a href = "#" class = "userAva">
@@ -217,24 +220,24 @@
                     <div class = "userComment">
                         <!-- Коментарі будуть додаватися сюди -->
                     </div>
-                </div>
+                </section>
 
                 <div class = "newComment">
                     <label>Ваш відгук:</label>
                     <div class = "inputNewComment">
                         <input type = "text" id = "inputComment" placeholder = "Коментар...">
-                        <button id="submitButton" onclick = "sendComment()">
+                        <button id="submitButton" onclick = "sendComment()" touchstart = "sendComment">
                             <img src = "img/send_icon.ico" class = "buttonComLogo">
                         </button>
                     </div>
                 </div>
-            </div>
-        </div>
+            </section>
+        </section>
 
     </main>
 
     <footer>
-        <div class = "footerContent">
+        <section class = "footerContent">
             <ul class = "sectionsList">
                 <li>
                     <a href = "main.html" class = "sectionName">Каталог</a>
@@ -266,7 +269,7 @@
                     <img src = "img/twitter_ico.ico" class = "ico">
                 </a>
             </div>
-        </div>
+        </section>
     </footer>
 
     <script src="js/itemPageScript.js"></script>
