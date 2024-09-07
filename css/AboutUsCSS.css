@@ -3,6 +3,18 @@
     width: 100px;
 }
 
+@media screen and (max-width: 768px) {
+    .mainLogoDiv {
+        height: 45px;
+        width: 50px;
+    }
+
+    .mainLogoImg {
+        height: 45px;
+        width: 50px;
+    }
+}
+
 .buttonNav {
     text-decoration: none;
     color: black;
@@ -12,8 +24,21 @@
     transition: color 0.3s ease;
 }
 
+@media screen and (max-width: 768px) {
+    .buttonNav {
+        font-size: 7px;
+    }
+}
+
 .buttonNav:hover {
     color: #F8EDE3;
+}
+
+@media screen and (max-width: 768px) {
+    #userNav {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .avaUserImg {
@@ -21,10 +46,24 @@
     width: 70px;
 }
 
+@media screen and (max-width: 768px) {
+    .avaUserImg {
+        height: 20px;
+        width: 20px;
+    }
+}
+
 nav {
     display: flex;
     gap: 40px;
     align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        gap: 7px;
+        z-index: 1001;
+    }
 }
 
 header {
@@ -34,11 +73,23 @@ header {
     justify-content: space-between;
 }
 
+@media screen and (max-width: 768px) {
+    header {
+        margin: 20px 20px 50px 20px;
+    }
+}
+
 .aboutUsSection h1 {
     font-family: "Unbounded";
     font-size: 40px;
     font-weight: 900;
     color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .aboutUsSection h1 {
+        font-size: 15px;
+    }
 }
 
 .aboutUsSection p {
@@ -49,11 +100,23 @@ header {
     max-width: 70%;
 }
 
+@media screen and (max-width: 768px) {
+    .aboutUsSection p {
+        font-size: 10px;
+    }
+}
+
 .additionalInfo h1 {
     font-family: "Unbounded";
     font-size: 30px;
     font-weight: 700;
     color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .additionalInfo h1 {
+        font-size: 12px;
+    }
 }
 
 .additionalInfo p {
@@ -64,11 +127,23 @@ header {
     max-width: 70%;
 }
 
+@media screen and (max-width: 768px) {
+    .additionalInfo p {
+        font-size: 10px;
+    }
+}
+
 .optionalContainer h1 {
     font-family: "Unbounded";
     font-size: 30px;
     font-weight: 700;
     color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .optionalContainer h1 {
+        font-size: 12px;
+    }
 }
 
 .optionalContainer p {
@@ -79,8 +154,22 @@ header {
     max-width: 70%;
 }
 
+@media screen and (max-width: 768px) {
+    .optionalContainer p {
+        font-size: 10px;
+    }
+}
+
 .optionalContainer span {
     font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+    .aboutUsContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
 }
 
 .list {
@@ -89,11 +178,26 @@ header {
     gap: 20px;
 }
 
+@media screen and (max-width: 768px) {
+    .list {
+        gap: 10px;
+    }
+}
+
 .mainContainer {
     background-color: #7D6E83;
     padding: 50px 80px;
     display: flex;
     flex-direction: row;
+}
+
+@media screen and (max-width: 768px) {
+    .mainContainer {
+        flex-direction: column;
+        padding: 40px 30px;
+        border-radius: 20px;
+        gap: 40px;
+    }
 }
 
 .contact h1 {
@@ -104,6 +208,12 @@ header {
     margin: 0px;
 }
 
+@media screen and (max-width: 768px) {
+    .contact h1 {
+        font-size: 15px;
+    }
+}
+
 .phoneNemail p {
     font-family: "Unbounded";
     font-size: 15px;
@@ -111,6 +221,12 @@ header {
     color: white;
     margin-top: 0px;
     margin-bottom: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .phoneNemail {
+        font-size: 12px;
+    }
 }
 
 .phoneNemail p:hover {
@@ -126,6 +242,12 @@ header {
     margin-bottom: 5px;
 }
 
+@media screen and (max-width: 768px) {
+    .addressNSchedule p {
+        font-size: 12px;
+    }
+}
+
 .partners h1 {
     font-family: "Unbounded";
     font-size: 30px;
@@ -135,10 +257,27 @@ header {
     margin-bottom: 15px;
 }
 
+@media screen and (max-width: 768px) {
+    .partners h1 {
+        font-size: 12px;
+    }
+}
+
+.partnersLogo {
+    height: 40px;
+    width: 40px;
+}
+
 .contact {
     display: flex;
     flex-direction: column;
     gap: 35px;
+}
+
+@media screen and (max-width: 768px) {
+    .contact {
+        gap: 20px;
+    }
 }
 
 .socialMedia a {
@@ -152,6 +291,12 @@ header {
     gap: 5px;
 }
 
+@media screen and (max-width: 768px) {
+    .socialMedia a {
+        font-size: 10px;
+    }
+}
+
 .socialMedia h1 {
     font-family: "Unbounded";
     font-size: 30px;
@@ -159,6 +304,12 @@ header {
     color: white;
     margin-top: 10px;
     margin-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .socialMedia h1 {
+        font-size: 12px;
+    }
 }
 
 .socialMLink p {
@@ -176,12 +327,27 @@ header {
     margin-top: 15px;
 }
 
+@media screen and (max-width: 768px) {
+    .socialMLogo {
+        height: 10px;
+        width: 10px;
+    }
+}
+
 .secondContainer {
     background-color: #7D6E83;
     padding: 50px 80px;
     display: flex;
     flex-direction: row;
     gap: 300px;
+}
+
+@media screen and (max-width: 768px) {
+    .secondContainer {
+        flex-direction: column;
+        gap: 50px;
+        padding: 40px 30px;
+    }
 }
 
 main {
@@ -204,8 +370,14 @@ body {
     transition: color 0.3 ease;
 }
 
+@media screen and (max-width: 768px) {
+    .sectionName {
+        font-size: 5px;
+    }
+}
+
 .sectionName:hover {
-    color: #7D6E83;
+    color: #F8EDE3;
 }
 
 .sectionsList li {
@@ -215,8 +387,25 @@ body {
     text-decoration: none; 
 }
 
+@media screen and (max-width: 768px) {
+    .sectionsList li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
 .sectionsList {
     padding: 0px;
+}
+
+@media screen and (max-width: 768px) {
+    .sectionsList {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin: 0px;
+    }
 }
 
 .copyrightTetx {
@@ -229,9 +418,24 @@ body {
     width: 390px;
 }
 
+@media screen and (max-width: 768px) {
+    .copyrightTetx {
+        font-size: 7px;
+        height: auto;
+        width: 185px;
+    }
+}
+
 .ico {
     height: 20px;
     width: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .ico {
+        height: 10px;
+        width: 10px;
+    }
 }
 
 .socialmediaDiv {
@@ -250,8 +454,4 @@ footer {
     padding: 20px 30px;
     box-sizing: border-box;
     margin-top: 190px;
-}
-
-html {
-    scroll-behavior: smooth;
 }
