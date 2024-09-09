@@ -51,6 +51,7 @@ menuIcon.addEventListener("click", function () {
 });
 
 menuIcon.addEventListener("touchstart", function () {
+    preventDefault();
     filterMenu.classList.toggle("active");
     overlay.classList.toggle("active");
     body.classList.toggle("active");
@@ -63,6 +64,7 @@ overlay.addEventListener("click", function () {
 });
 
 overlay.addEventListener("touchstart", function () {
+    preventDefault();
     filterMenu.classList.remove("active");
     overlay.classList.remove("active");
     body.classList.remove("active")

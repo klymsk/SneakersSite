@@ -7,6 +7,24 @@ function cityMenu() {
     }
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    const userLoggedIn = localStorage.getItem('userLoggedIn');
+
+    if (userLoggedIn) {
+        document.getElementById("userNav").innerHTML = `
+            <a href="profile.html" class="avaUserDiv">
+                <img src="img/ava.png" class="avaUserImg">
+            </a>
+        `;
+        console.log(localStorage.getItem('userLoggedIn'));
+    }
+    else {
+        document.getElementById("userNav").innerHTML = `
+            <a href="login.html" class="buttonNav">Увійти</a>
+        `;
+    }
+});
+
 function changeCity(cityName) {
     var storeInfo = document.getElementById('storeInfo');
 
