@@ -93,6 +93,13 @@ body {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .imgSneakersImg {
+        height: 380px;
+        width: 440px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .imgSneakersImg {
         height: auto;
@@ -103,6 +110,13 @@ body {
 .imgSneakersDiv {
     height: 620px;
     width: 680px;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .imgSneakersDiv {
+        height: 380px;
+        width: 440px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -120,6 +134,12 @@ body {
     margin-bottom: 0px;
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .itemName {
+        font-size: 30px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .itemName {
         font-size: 20px;
@@ -132,6 +152,12 @@ body {
     font-weight: 100;
     color: #444444;
     margin-top: 0px;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .itemArticle {
+        font-size: 10px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -148,6 +174,12 @@ body {
     margin-top: 0px;
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .itemPrice {
+        font-size: 35px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .itemPrice {
         font-size: 25px;
@@ -161,6 +193,12 @@ body {
     font-weight: 700;
     color: #444444;
     margin-top: 0px;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .sizeTxt {
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -245,6 +283,15 @@ body {
     color: white;
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .buyButton {
+        height: auto;
+        width: auto;
+        padding: 10px 50px;
+        font-size: 20px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .buyButton {
         height: auto;
@@ -264,6 +311,13 @@ body {
     width: 25px;
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .addButImg {
+        height: 20px;
+        width: 20px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .addButImg {
         height: 10px;
@@ -279,6 +333,13 @@ body {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
     border: none;
     outline: none;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .aditionalButton {
+        height: auto;
+        padding: 10px 0px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -300,6 +361,12 @@ body {
     gap: 20px;
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .buttons {
+        gap: 10px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .buttons {
         gap: 10px;
@@ -307,10 +374,22 @@ body {
     }
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .mainInfo {
+        gap: 15px;
+    }
+}
+
 .mainInfo {
     display: flex;
     flex-direction: column;
     gap: 30px;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .mainBlock {
+        padding: 40px 120px 40px 50px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -351,6 +430,12 @@ body {
     color: 444444;
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .description h1 {
+        font-size: 15px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .description h1 {
         font-size: 15px;
@@ -364,6 +449,13 @@ body {
     color: 444444;
     height: 180px;
     width: 550px;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .description p {
+        width: auto;
+        font-size: 10px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -389,10 +481,22 @@ body {
     }
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .tableNCharac h1 {
+        font-size: 15px;
+    }
+}
+
 .tableNCharac {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .tableNCharac {
+        gap: 50px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -423,12 +527,25 @@ body {
     display: none;
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .size-chart {
+        width: 40%;
+    }
+}
+
 .size-chart td {
     padding: 10px;
     text-align: center;
     border-bottom: 1px solid #ddd;
     font-family: "Unbounded";
     font-weight: 200;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .size-chart td {
+        padding: 5px;
+        font-size: 10px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -443,6 +560,13 @@ body {
     border-bottom: 1px solid #ddd;
     font-family: "Unbounded";
     font-weight: 500;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .size-chart th {
+        padding: 5px;
+        font-size: 10px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -465,6 +589,12 @@ body {
     margin-bottom: 0px;
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .charac p {
+        font-size: 10px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .charac p {
         font-size: 10px;
@@ -478,6 +608,13 @@ body {
     padding: 50px 120px 50px 70px;
     box-sizing: border-box;
     background-color: #F8EDE3;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .infoBlock {
+        height: auto;
+        width: 580px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -554,6 +691,12 @@ body {
     width: 50%;
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .newComment input {
+        width: 80%;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .newComment input {
         width: 80%;
@@ -595,6 +738,13 @@ body {
     background-color: #F8EDE3;
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .commentsBlock {
+        height: auto;
+        width: 570px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .commentsBlock {
         height: auto;
@@ -620,6 +770,12 @@ main {
     display: flex;
     flex-direction: column;
     gap: 50px;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    main {
+        padding: 0px 100px 50px 100px;
+    }
 }
 
 @media screen and (max-width: 768px) {

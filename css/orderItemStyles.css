@@ -3,11 +3,29 @@
     width: 100px;
 }
 
+@media screen and (max-width: 768px) {
+    .mainLogoDiv {
+        height: 45px;
+        width: 50px;
+    }
+
+    .mainLogoImg {
+        height: 45px;
+        width: 50px;
+    }
+}
+
 .mainTitle {
     font-family: "Unbounded";
     font-size: 25px;
     font-weight: 800;
     color: #444444;
+}
+
+@media screen and (max-width: 768px) {
+    .mainTitle {
+        font-size: 10px;
+    }
 }
 
 header {
@@ -22,9 +40,16 @@ header {
     font-family: "Unbounded";
     font-size: 25px;
     font-weight: 700;
-    color: black;
+    color: #444444;
     display: flex;
     justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .containerOfUser h1 {
+        font-size: 20px;
+        justify-content: flex-start;
+    }
 }
 
 .containerOfUser h2 {
@@ -32,6 +57,12 @@ header {
     font-size: 15px;
     font-weight: 200;
     color: #444444;
+}
+
+@media screen and (max-width: 768px) {
+    .containerOfUser h2 {
+        font-size: 10px;
+    }
 }
 
 .inputContainer input {
@@ -46,10 +77,24 @@ header {
     box-sizing: border-box;
 }
 
+@media screen and (max-width: 768px) {
+    .inputContainer input {
+        padding: 5px 10px;
+        font-size: 15px;
+        width: 70%;
+    }
+}
+
 .inputContainer {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 140px 140px;
     gap: 50px; 
+}
+
+@media screen and (max-width: 768px) {
+    .inputContainer {
+        width: 100%;
+    }
 }
 
 .containerOfUser button {
@@ -64,6 +109,14 @@ header {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     border: none;
     outline: none;
+}
+
+@media screen and (max-width: 768px) {
+    .containerOfUser button {
+        font-size: 8px;
+        height: 55px;
+        width: 80px;
+    }
 }
 
 .containerOfUser button:active {
@@ -84,10 +137,25 @@ header {
     width: 60%;
 }
 
+@media screen and (max-width: 768px) {
+    .deliveryDiv input {
+        padding: 5px 10px;
+        font-size: 15px;
+        width: 70%;
+    }
+}
+
 .buttonsContainer {
     display: flex;
     flex-direction: row;
     gap: 80px;
+}
+
+@media screen and (max-width: 768px) {
+    .buttonsContainer {
+        gap: 0px;
+        justify-content: space-between;
+    }
 }
 
 .contactUser {
@@ -96,16 +164,34 @@ header {
     gap: 50px;
 }
 
+@media screen and (max-width: 768px) {
+    .contactUser {
+        gap: 30px;
+    }
+}
+
 .deliveryDiv {
     display: flex;
     flex-direction: column;
     gap: 50px;
 }
 
+@media screen and (max-width: 768px) {
+    .deliveryDiv {
+        gap: 30px;
+    }
+}
+
 .paymentDiv {
     display: flex;
     flex-direction: column;
     gap: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .paymentDiv {
+        gap: 30px;
+    }
 }
 
 .containerOfUser {
@@ -117,11 +203,26 @@ header {
     gap: 70px;
 }
 
+@media screen and (max-width: 768px) {
+    .containerOfUser {
+        position: absolute;
+        top: 750px;
+        padding: 40px 30px;
+        width: auto;
+    }
+}
+
 .titleItem {
     font-family: "Unbounded";
     font-size: 25px;
     font-weight: 700;
     color: black;
+}
+
+@media screen and (max-width: 768px) {
+    .titleItem {
+        font-size: 20px;
+    }
 }
 
 .itemInfo img {
@@ -131,11 +232,18 @@ header {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+@media screen and (max-width: 768px) {
+    .itemInfo img {
+        height: auto;
+        width: 40%;
+    }
+}
+
 .itemInfo h1 {
     font-family: "Unbounded";
     font-size: 20px;
     font-weight: 900;
-    color: black; 
+    color: #444444; 
     margin-bottom: 5px;
 }
 
@@ -161,6 +269,12 @@ header {
     gap: 20px;
 }
 
+@media screen and (max-width: 768px) {
+    .nameNPrice {
+        gap: 10px;
+    }
+}
+
 .priceInfo h1 {
     font-family: "Unbounded";
     font-size: 15px;
@@ -181,6 +295,12 @@ header {
     color: #444444; 
 }
 
+@media screen and (max-width: 768px) {
+    .priceInfo h2 {
+        font-size: 10px;
+    }
+}
+
 .containerItem button {
     font-family: "Unbounded";
     font-size: 20px;
@@ -195,6 +315,14 @@ header {
     box-sizing: border-box;
 }
 
+@media screen and (max-width: 768px) {
+    .containerItem button {
+        font-size: 15px;
+        padding: 15px 20px;
+        width: 100%;
+    }
+}
+
 .containerItem button:active {
     transform: scale(0.95); 
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
@@ -205,6 +333,12 @@ header {
     font-size: 15px;
     font-weight: 200;
     color: #7D6E83; 
+}
+
+@media screen and (max-width: 768px) {
+    .commentTxt p {
+        font-size: 10px;
+    }
 }
 
 .itemInfo {
@@ -223,10 +357,26 @@ header {
     height: 100%;
 }
 
+@media screen and (max-width: 768px) {
+    .containerItem {
+        position: absolute;
+        top: 130px;
+        padding: 25px;
+        gap: 40px;
+        height: auto;
+    }
+}
+
 main {
     display: flex;
     flex-direction: row;
     gap: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
 }
 
 body {
@@ -236,4 +386,10 @@ body {
     display: flex;
     flex-direction: column;
     gap: 70px;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 15px 0px;
+    }
 }
