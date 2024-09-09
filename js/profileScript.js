@@ -26,3 +26,17 @@ document.getElementById('logoutButton').addEventListener('click', function() {
         localStorage.removeItem('userLoggedIn'); 
         window.location.href = "main.html"; 
     });
+
+
+const mobileNav = document.getElementById("nav");
+
+if (window.innerWidth <= 768) {
+    mobileNav.innerHTML = `
+            <nav>
+                <a href = "#" class = "buttonNav">Мої замовлення</a>
+                <a href = "#" class = "buttonNav">Список бажаного</a>
+                <a href = "#" class = "buttonNav">Служба підтримки</a>
+                <a href = "#" class = "buttonNav" id="logoutButton">Вийти</a>
+            </nav>
+        `;
+}
