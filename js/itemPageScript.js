@@ -52,7 +52,7 @@ function sendComment() {
 }
 
 const mobileNav = document.getElementById("nav");
-const buttons = document.getElementById("buttons")
+const buttons = document.getElementById("buttons");
 
 if (window.innerWidth <= 768) {
     mobileNav.innerHTML = `
