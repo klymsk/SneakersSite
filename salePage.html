@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
     <link rel = "stylesheet" href = "css/saleStyles.css">
 </head>
-<body>
+<body id = "body">
     <header>
         <div class = "mainHeader">
             <a href = "main.html" class = "mainLogoDiv">
@@ -32,23 +32,30 @@
     </header>
 
     <main>
-        <div class = "brandsDiv">
+        <section class = "headSection">
+            <div id = "menuIcon" class = "menu-icon">
+                <img src = "img/menu_ico.png">
+            </div>
+
             <a href = "#" class = "brandLogoDiv">
-                <img src = "img/circle.png" class = "brandLogoImg">
+                <img src = "img/adidas_logo.png" class = "brandLogoImg">
             </a>
             <a href = "#" class = "brandLogoDiv">
-                <img src = "img/circle.png" class = "brandLogoImg">
+                <img src = "img/nike_logo.png" class = "brandLogoImg">
             </a>
             <a href = "#" class = "brandLogoDiv">
-                <img src = "img/circle.png" class = "brandLogoImg">
+                <img src = "img/nb_logo.png" class = "brandLogoImg">
             </a>
             <a href = "#" class = "brandLogoDiv">
-                <img src = "img/circle.png" class = "brandLogoImg">
+                <img src = "img/puma_logo.png" class = "brandLogoImg">
             </a>
-        </div>
-        <div class = "filterNCatalog">
-            <div class = filterDiv>
-                <div class = topicDiv>
+        </section>
+
+        <div id="overlay"></div>
+        
+        <section class = "filterNCatalog">
+            <aside class = filterDiv id="filterMenu">
+                <section class = topicDiv>
                     <h1 class = "headerFilter">Розміри</h1>
                     <ul class="listFilter">
                         <li>
@@ -67,9 +74,9 @@
                             </label>
                         </li>
                     </ul>
-                </div>
+                </section>
     
-                <div class = topicDiv>
+                <section class = topicDiv>
                     <h1 class = "headerFilter">Бренди</h1>
                     <ul class = listFilter>
                         <li>
@@ -88,9 +95,9 @@
                             </label>
                         </li>
                     </ul>
-                </div>
+                </section>
     
-                <div class = topicDiv>
+                <section class = topicDiv>
                     <h1 class = "headerFilter">Кольори</h1>
                     <ul class = listFilter>
                         <li>
@@ -109,9 +116,9 @@
                             </label>
                         </li>
                     </ul>
-                </div>
+                </section>
     
-                <div class = topicDiv>
+                <section class = topicDiv>
                     <h1 class = "headerFilter">Сезон</h1>
                     <ul class = listFilter>
                         <li>
@@ -130,9 +137,9 @@
                             </label>
                         </li>
                     </ul>
-                </div>
+                </section>
     
-                <div class = topicDiv>
+                <section class = topicDiv>
                     <h1 class = "headerFilter">Призначення</h1>
                     <ul class = listFilter>
                         <li>
@@ -151,10 +158,10 @@
                             </label>
                         </li>
                     </ul>
-                </div>
-            </div>
+                </section>
+            </aside>
 
-            <div class = "catalogDiv">
+            <section class = "catalogDiv">
                 <div class = "itemDiv" data-sizes="39">
                     <a href = "itemPage.html" class = "itemLink">
                         <img src = "img/new-balance-530.png" class = "itemImg">
@@ -227,12 +234,12 @@
                     <h2 class = "newItemPrice">5300 грн.</h2>
                     <h2 class = "oldItemPrice">8500 грн.</h2>
                 </div>
-            </div>
-        </div>
+            </section>
+        </section>
     </main>
 
     <footer>
-        <div class = "footerContent">
+        <section class = "footerContent">
             <ul class = "sectionsList">
                 <li>
                     <a href = "main.html" class = "sectionName">Каталог</a>
@@ -264,53 +271,9 @@
                     <img src = "img/twitter_ico.ico" class = "ico">
                 </a>
             </div>
-        </div>
+        </section>
     </footer>
 
-    <script>
-        
-        document.addEventListener('DOMContentLoaded', function() {
-        const sizeCheckboxes = document.querySelectorAll('.filterDiv input[type="checkbox"]');
-        const items = document.querySelectorAll('.itemDiv');
-
-    sizeCheckboxes.forEach(checkbox => {
-        checkbox.addEventListener('change', () => {
-            const selectedSizes = Array.from(sizeCheckboxes)
-                .filter(checkbox => checkbox.checked)
-                .map(checkbox => checkbox.value);
-
-            items.forEach(item => {
-                const itemSizes = item.getAttribute('data-sizes') ? item.getAttribute('data-sizes').split(',').map(size => size.trim()) : [];
-
-                if (selectedSizes.length === 0 || selectedSizes.some(size => itemSizes.includes(size))) {
-                    item.style.display = 'block';
-                } else {
-                    item.style.display = 'none';
-                }
-            });
-        });
-    });
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-        const userLoggedIn = localStorage.getItem('userLoggedIn');
-
-        if (userLoggedIn) {
-            // Якщо користувач увійшов, замінюємо кнопку на аватарку
-            document.getElementById("userNav").innerHTML = `
-                <a href="profile.html" class="avaUserDiv">
-                    <img src="img/ava.png" class="avaUserImg">
-                </a>
-            `;
-            console.log(localStorage.getItem('userLoggedIn'));
-        }
-        else {
-            document.getElementById("userNav").innerHTML = `
-                <a href="login.html" class="buttonNav">Увійти</a>
-            `;
-        }
-    });
-    
-    </script>
+    <script src = "js/salesScript.js"></script>
 </body>
 </html>
