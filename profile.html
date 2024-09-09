@@ -14,7 +14,7 @@
         <a href = "main.html" class = "mainLogoDiv">
             <img src = "img/logoHeader.png" class = "mainLogoImg">
         </a>
-        <nav>
+        <nav id = "nav">
             <a href = "main.html" class = "buttonNav">Каталог</a>
             <a href = "stores.html" class = "buttonNav">Магазини</a>
             <a href = "salePage.html" class = "buttonNav">Розпродаж</a>
@@ -26,8 +26,8 @@
     </header>
 
     <main>
-        <div class = "mainContainer">
-            <div class = "categoriesProfile">
+        <section class = "mainContainer">
+            <aside class = "categoriesProfile">
                 <div class = "mainCategories">
                     <a href = "#">Мої замовлення</a>
                     <a href = "#">Список бажаного</a>
@@ -36,20 +36,20 @@
                     <a href = "#">Спосіб оплати</a>
                 </div>
         
-                <div class = "addCategpries">
+                <div class = "addCategories">
                     <a href = "#" class = "supportButton">Служба підтримки</a>
                     <a href = "#" class = "exitButton" id="logoutButton">Вийти</a>
                 </div>
-            </div>
+            </aside>
     
-            <div class = "generalBlock">
-                <div class = "mainInfo">
+            <section class = "generalBlock">
+                <section class = "mainInfo">
                     <div class = titleSection>
                         <h1>Мій профіль</h1>
                         <h2>Персональні дані</h2>
                     </div>
         
-                    <div class = "personalData">
+                    <section class = "personalData">
                         <div>
                             <h1>Ім'я:</h1>
                             <p id="name">Name</p>
@@ -85,12 +85,12 @@
                             <p id="email">example@smth.com</p>
                             <input type="email" id="emailInput" value="example@smth.com" style="display:none;">
                         </div>
-                    </div>
-                </div>
+                    </section>
+                </section>
         
                 <h1 class = "titleStyle">Бажаний стиль:</h1>
         
-                <div class = "stylesList">
+                <section class = "stylesList">
                     <ul class="listFilter">
                         <li>
                             <label>
@@ -123,17 +123,17 @@
                             </label>
                         </li>
                     </ul>
-                </div>
+                </section>
     
                 <div class = "saveButton">
                     <button id="editButton" onclick="toggleEdit()">Редагувати</button>
                 </div>
-            </div>
-        </div>
+            </section>
+        </section>
     </main>
 
     <footer>
-        <div class = "footerContent">
+        <section class = "footerContent">
             <ul class = "sectionsList">
                 <li>
                     <a href = "main.html" class = "sectionName">Каталог</a>
@@ -165,7 +165,7 @@
                     <img src = "img/twitter_ico.ico" class = "ico">
                 </a>
             </div>
-        </div>
+        </section>
     </footer>
 
     <script src = "js/profileScript.js"></script>
