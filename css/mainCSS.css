@@ -88,6 +88,7 @@ body {
 @media screen and (max-width: 768px) {
     body.active {
         position: fixed;
+        left: 0px;
         right: 0px;
         z-index: 1001;
     }

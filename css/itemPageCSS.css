@@ -389,6 +389,7 @@ body {
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
     .mainBlock {
         padding: 40px 120px 40px 50px;
+        gap: 20px;
     }
 }
 
@@ -408,6 +409,14 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .mainBlock {
+        height: auto;
+        width: 100%;
+        padding: 40px 120px 40px 50px;
+    }
 }
 
 @media screen and (max-width: 768px) {

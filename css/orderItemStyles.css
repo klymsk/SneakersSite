@@ -39,10 +39,16 @@ header {
 .containerOfUser h1 {
     font-family: "Unbounded";
     font-size: 25px;
-    font-weight: 700;
+    font-weight: 800;
     color: #444444;
     display: flex;
     justify-content: center;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .containerOfUser h1 {
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -57,6 +63,12 @@ header {
     font-size: 15px;
     font-weight: 200;
     color: #444444;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .containerOfUser h2 {
+        font-size: 10px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -87,13 +99,20 @@ header {
 
 .inputContainer {
     display: grid;
-    grid-template-columns: 140px 140px;
+    grid-template-columns: 330px 330px;
     gap: 50px; 
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .inputContainer {
+        grid-template-columns: 270px 270px;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .inputContainer {
         width: 100%;
+        grid-template-columns: 150px 150px;
     }
 }
 
@@ -109,6 +128,14 @@ header {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     border: none;
     outline: none;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .containerOfUser button {
+        font-size: 10px;
+        height: 80px;
+        width: 140px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -137,6 +164,14 @@ header {
     width: 60%;
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .deliveryDiv input {
+        padding: 5px 10px;
+        font-size: 15px;
+        width: 70%;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .deliveryDiv input {
         padding: 5px 10px;
@@ -149,6 +184,13 @@ header {
     display: flex;
     flex-direction: row;
     gap: 80px;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .buttonsContainer {
+        gap: 0px;
+        justify-content: space-between;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -164,6 +206,12 @@ header {
     gap: 50px;
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .contactUser {
+        gap: 30px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .contactUser {
         gap: 30px;
@@ -176,6 +224,12 @@ header {
     gap: 50px;
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .deliveryDiv {
+        gap: 30px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .deliveryDiv {
         gap: 30px;
@@ -186,6 +240,12 @@ header {
     display: flex;
     flex-direction: column;
     gap: 50px;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .paymentDiv {
+        gap: 30px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -201,6 +261,14 @@ header {
     display: flex;
     flex-direction: column;
     gap: 70px;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .containerOfUser {
+        height: auto;
+        width: auto;
+        padding: 40px 50px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -219,6 +287,12 @@ header {
     color: black;
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .titleItem {
+        font-size: 20px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .titleItem {
         font-size: 20px;
@@ -230,6 +304,12 @@ header {
     width: 30%;
     border-radius: 20px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .itemInfo img {
+        width: 40%;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -247,12 +327,24 @@ header {
     margin-bottom: 5px;
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .itemInfo h1 {
+        font-size: 15px;
+    }
+}
+
 .itemInfo h2 {
     font-family: "Unbounded";
     font-size: 15px;
     font-weight: 800;
     color: #444444; 
     margin-bottom: 5px;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .itemInfo {
+        font-size: 10px;
+    }
 }
 
 .itemInfo p {
@@ -263,10 +355,22 @@ header {
     margin: 0px;
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .itemInfo p {
+        font-size: 10px;
+    }
+}
+
 .nameNPrice {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .nameNPrice {
+        gap: 15px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -315,6 +419,13 @@ header {
     box-sizing: border-box;
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .containerItem button {
+        font-size: 15px;
+        padding: 20px 35px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .containerItem button {
         font-size: 15px;
@@ -333,6 +444,12 @@ header {
     font-size: 15px;
     font-weight: 200;
     color: #7D6E83; 
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .commentTxt p {
+        font-size: 10px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -357,6 +474,15 @@ header {
     height: 100%;
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .containerItem {
+        padding: 40px 30px;
+        height: 100%;
+        width: auto;
+        gap: 50px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .containerItem {
         position: absolute;
@@ -371,6 +497,12 @@ main {
     display: flex;
     flex-direction: row;
     gap: 30px;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    main {
+        gap: 30px;
+    }
 }
 
 @media screen and (max-width: 768px) {

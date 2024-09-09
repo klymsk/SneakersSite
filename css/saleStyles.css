@@ -309,7 +309,7 @@ label {
 
 @media screen and (max-width: 768px) {
     .itemDiv {
-        height: 160px;
+        height: 180px;
         width: 130px;
     }
 }
