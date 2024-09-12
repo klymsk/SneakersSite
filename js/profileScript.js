@@ -36,7 +36,12 @@ if (window.innerWidth <= 768) {
                 <a href = "#" class = "buttonNav">Мої замовлення</a>
                 <a href = "#" class = "buttonNav">Список бажаного</a>
                 <a href = "#" class = "buttonNav">Служба підтримки</a>
-                <a href = "#" class = "buttonNav" id="logoutButton">Вийти</a>
+                <a href = "#" class = "buttonNav" id="logoutButtonPhone">Вийти</a>
             </nav>
         `;
+
+        document.getElementById('logoutButtonPhone').addEventListener('click', function() {
+            localStorage.removeItem('userLoggedIn'); 
+            window.location.href = "main.html"; 
+        });
 }
