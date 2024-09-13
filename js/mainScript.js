@@ -22,6 +22,36 @@ sizeCheckboxes.forEach(checkbox => {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
+    function filterItems() {
+        const selectedBrands = Array.from(document.querySelectorAll('.listFilter input[type="checkbox"]:checked'))
+                                   .map(cb => cb.value);
+        
+        const items = document.querySelectorAll('.catalogDiv .itemDiv');
+        
+        items.forEach(item => {
+            const itemBrand = item.getAttribute('data-brand');
+            
+            if (selectedBrands.length > 0) {
+                if (selectedBrands.includes(itemBrand)) {
+                    item.style.display = 'block'; 
+                } else {
+                    item.style.display = 'none'; 
+                }
+            } else {
+                item.style.display = 'block'; 
+            }
+        });
+    }
+
+
+    document.querySelectorAll('.listFilter input[type="checkbox"]').forEach(checkbox => {
+        checkbox.addEventListener('change', filterItems);
+    });
+    
+    filterItems();
+});
+
+document.addEventListener('DOMContentLoaded', function() {
     const userLoggedIn = localStorage.getItem('userLoggedIn');
 
     if (userLoggedIn) {
