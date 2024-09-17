@@ -74,10 +74,10 @@ const buttons = document.getElementById("buttons");
 
 if (window.innerWidth <= 768) {
     mobileNav.innerHTML = `
-            <a href = "main.html" class = "buttonNav">Опис</a>
-            <a href = "stores.html" class = "buttonNav">Характеристики</a>
-            <a href = "salePage.html" class = "buttonNav">Розміри</a>
-            <a href = "AboutUs.html#targetSection" class = "buttonNav">Відгуки</a>
+            <a href = "#descriptionID" class = "buttonNav">Опис</a>
+            <a href = "#characID" class = "buttonNav">Характеристики</a>
+            <a href = "#sizesID" class = "buttonNav">Розміри</a>
+            <a href = "#commentsID" class = "buttonNav">Відгуки</a>
             <a href = "profile.html" class = "avaUserDiv">
                 <img src = "img/ava.png" class = "avaUserImg">
             </a>
