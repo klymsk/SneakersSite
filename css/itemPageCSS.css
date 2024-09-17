@@ -33,7 +33,7 @@
 }
 
 .buttonNav:hover {
-    color: #F8EDE3;
+    color: black;
 }
 
 @media screen and (max-width: 768px) {
